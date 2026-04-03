@@ -1,1 +1,18 @@
-
+services:
+  - type: web
+    name: novax-api
+    runtime: dotnet
+    rootDir: backend
+    buildCommand: dotnet restore && dotnet build -c Release && dotnet publish -c Release -o out
+    startCommand: dotnet out/YourProject.API.dll
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
+      - key: ConnectionStrings__DefaultConnection
+        sync: false
+      - key: Jwt__Key
+        sync: false
+      - key: Jwt__Issuer
+        sync: false
+      - key: Jwt__Audience
+        sync: false
