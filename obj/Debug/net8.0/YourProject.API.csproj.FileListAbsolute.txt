@@ -1,6 +1,13 @@
+C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\out\web.config
 C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\appsettings.json
 C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\Data\seed.dossiers.2026.json
+C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\out\appsettings.Development.json
+C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\out\appsettings.json
+C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\out\Data\seed.dossiers.2026.json
+C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\out\YourProject.API.deps.json
+C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\out\YourProject.API.runtimeconfig.json
+C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\out\YourProject.API.staticwebassets.endpoints.json
 C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\YourProject.API.staticwebassets.runtime.json
 C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\YourProject.API.staticwebassets.endpoints.json
 C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\YourProject.API.exe
@@ -11,6 +18,11 @@ C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\De
 C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\ClosedXML.dll
+C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\ClosedXML.Parser.dll
+C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\DocumentFormat.OpenXml.dll
+C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\DocumentFormat.OpenXml.Framework.dll
+C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\ExcelNumberFormat.dll
 C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\Humanizer.dll
 C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
@@ -37,7 +49,11 @@ C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\De
 C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\Npgsql.dll
+C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\QuestPDF.dll
+C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\RBush.dll
+C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\SixLabors.Fonts.dll
 C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -50,6 +66,7 @@ C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\De
 C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
 C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\System.Drawing.Common.dll
 C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\System.IO.Packaging.dll
 C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\System.Memory.Data.dll
 C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\System.Runtime.Caching.dll
 C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
@@ -150,6 +167,7 @@ C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\obj\De
 C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\obj\Debug\net8.0\YourProject.API.csproj.CoreCompileInputs.cache
 C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\obj\Debug\net8.0\YourProject.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\obj\Debug\net8.0\YourProject.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\obj\Debug\net8.0\YourProject.API.sourcelink.json
 C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\obj\Debug\net8.0\scopedcss\bundle\YourProject.API.styles.css
 C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\obj\Debug\net8.0\staticwebassets.development.json
@@ -166,11 +184,3 @@ C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\obj\De
 C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\obj\Debug\net8.0\YourProject.API.pdb
 C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\obj\Debug\net8.0\YourProject.API.genruntimeconfig.cache
 C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\obj\Debug\net8.0\ref\YourProject.API.dll
-C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\ClosedXML.dll
-C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\ClosedXML.Parser.dll
-C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\DocumentFormat.OpenXml.dll
-C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\DocumentFormat.OpenXml.Framework.dll
-C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\ExcelNumberFormat.dll
-C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\RBush.dll
-C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\SixLabors.Fonts.dll
-C:\Users\PC\Desktop\projetnovaxexpert\NOVAX-Pro-FullStack\YourProject.API\bin\Debug\net8.0\System.IO.Packaging.dll

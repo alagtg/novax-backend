@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "wG/PTTuRFrk=",
+  "dgSpecHash": "FLpvgT6U/ro=",
   "success": true,
   "projectFilePath": "C:\\Users\\PC\\Desktop\\projetnovaxexpert\\NOVAX-Pro-FullStack\\YourProject.API\\YourProject.API.csproj",
   "expectedPackageFiles": [
@@ -52,6 +52,8 @@
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\npgsql\\8.0.2\\npgsql.8.0.2.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\8.0.2\\npgsql.entityframeworkcore.postgresql.8.0.2.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\questpdf\\2024.3.0\\questpdf.2024.3.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\rbush.signed\\4.0.0\\rbush.signed.4.0.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\sixlabors.fonts\\1.0.0\\sixlabors.fonts.1.0.0.nupkg.sha512",
