@@ -69,7 +69,7 @@ public class DossierService
                 Email = d.Email,
                 Siret = d.Siret,
                 VatNumber = d.VatNumber,
-                Rcs = d.Rcs,   
+                Rcs = d.Rcs,
                 Fj = d.Fj,
                 Address = d.Address,
                 City = d.City,
@@ -89,12 +89,16 @@ public class DossierService
                     .Select(a => a.User != null ? a.User.FullName : null)
                     .FirstOrDefault(),
 
-                SocialUserId = null,
+                // APRÈS — SocialUserId = le seul employé Social (après le fix Assign, il n'y en a qu'un)
+                SocialUserId = d.Assignments
+    .Where(a => a.Module == ModuleType.Social)
+    .Select(a => (int?)a.UserId)
+    .FirstOrDefault(),
 
                 SocialUserIds = d.Assignments
-                    .Where(a => a.Module == ModuleType.Social)
-                    .Select(a => a.UserId)
-                    .ToList(),
+    .Where(a => a.Module == ModuleType.Social)
+    .Select(a => a.UserId)
+    .ToList(),
 
                 SocialUserName = string.Join(", ",
                     d.Assignments
@@ -252,12 +256,20 @@ public class DossierService
             .Where(a => a.DossierId == dossierId && a.Module == module)
             .ToListAsync();
 
+        // APRÈS (correct : remplace l'employé Social comme Comptabilite/Juridique)
         if (module == ModuleType.Social)
         {
-            // Social = plusieurs employés autorisés
-            if (existingForModule.Any(a => a.UserId == userId))
+            var previousSocial = existingForModule.FirstOrDefault();
+
+            // Déjà assigné au bon employé → rien à faire
+            if (previousSocial != null && previousSocial.UserId == userId)
                 return true;
 
+            // Supprimer TOUTES les anciennes assignations Social
+            if (existingForModule.Count > 0)
+                _db.DossierAssignments.RemoveRange(existingForModule);
+
+            // Ajouter la nouvelle assignation
             _db.DossierAssignments.Add(new DossierAssignment
             {
                 DossierId = dossierId,
@@ -265,6 +277,25 @@ public class DossierService
                 Module = module
             });
 
+            // Transférer les TrackingRows (Fiches de Paie, DSN, DPAE)
+            // Transférer les TrackingRows (Fiches de Paie, DSN, DPAE)
+            if (previousSocial != null)
+            {
+                var oldUserId = previousSocial.UserId;
+
+                // ✅ Filtrer par DossierId + AssignedToUserId seulement
+                // (évite le problème de comparaison Module string vs enum)
+                var trackingRows = await _db.TrackingRows
+                    .Where(r => r.DossierId == dossierId
+                             && r.AssignedToUserId == oldUserId)
+                    .ToListAsync();
+
+                foreach (var row in trackingRows)
+                {
+                    row.AssignedToUserId = userId;
+                    row.UpdatedAt = DateTime.UtcNow;
+                }
+            }
             await _db.SaveChangesAsync();
             return true;
         }
@@ -409,7 +440,11 @@ public class DossierService
                     .Select(a => a.User != null ? a.User.FullName : null)
                     .FirstOrDefault(),
 
-                SocialUserId = null,
+                // APRÈS
+                SocialUserId = d.Assignments
+    .Where(a => a.Module == ModuleType.Social)
+    .Select(a => (int?)a.UserId)
+    .FirstOrDefault(),
 
                 SocialUserName = string.Join(", ",
                     d.Assignments
@@ -429,4 +464,5 @@ public class DossierService
             })
             .FirstOrDefaultAsync();
     }
+
 }

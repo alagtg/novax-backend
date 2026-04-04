@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Authentication.JwtBearer;
+ï»¿using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.Data.SqlClient;
@@ -54,8 +54,20 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 
 if (builder.Environment.IsDevelopment())
 {
-    builder.Services.AddDbContext<AppDbContext>(opt =>
-        opt.UseSqlServer(connectionString));
+    var provider = builder.Configuration["DatabaseProvider"] ?? "SqlServer";
+
+    if (provider == "Postgres")
+    {
+        var pgConn = builder.Configuration.GetConnectionString("PostgresConnection");
+        builder.Services.AddDbContext<AppDbContext>(opt =>
+            opt.UseNpgsql(pgConn));
+    }
+    else
+    {
+        var sqlConn = builder.Configuration.GetConnectionString("SqlServerConnection");
+        builder.Services.AddDbContext<AppDbContext>(opt =>
+            opt.UseSqlServer(sqlConn));
+    }
 }
 else
 {
@@ -141,7 +153,7 @@ using (var scope = app.Services.CreateScope())
     }
     catch
     {
-        // éviter le crash au démarrage si les migrations/provider ne correspondent pas
+        // ï¿½viter le crash au dï¿½marrage si les migrations/provider ne correspondent pas
     }
 
     try
@@ -151,7 +163,7 @@ using (var scope = app.Services.CreateScope())
     }
     catch
     {
-        // éviter le crash si seed dépend d'une base non prête
+        // ï¿½viter le crash si seed dï¿½pend d'une base non prï¿½te
     }
 }
 
