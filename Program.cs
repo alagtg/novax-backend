@@ -1,8 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using Microsoft.Data.SqlClient;
-using Npgsql;
 using QuestPDF.Infrastructure;
 using System.Text;
 using YourProject.API.Data;
@@ -75,12 +73,18 @@ else
         opt.UseNpgsql(connectionString));
 }
 
-builder.Services.AddCors(opt =>
+builder.Services.AddCors(options =>
 {
-    opt.AddPolicy("spa", p => p
-        .AllowAnyOrigin()
-        .AllowAnyHeader()
-        .AllowAnyMethod());
+    options.AddPolicy("spa", policy =>
+    {
+        policy
+            .WithOrigins(
+                "http://localhost:4200",
+                "https://brilliant-mermaid-4531b4.netlify.app"
+            )
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
 });
 
 builder.Services.AddScoped<IEmailSender, SmtpEmailSender>();
@@ -129,18 +133,20 @@ var app = builder.Build();
 
 QuestPDF.Settings.License = LicenseType.Community;
 
-app.UseCors("spa");
-app.UseStaticFiles();
-
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
+app.UseStaticFiles();
+
+app.UseCors("spa");
+
 app.UseAuthentication();
 app.UseAuthorization();
 
+app.MapGet("/healthz", () => Results.Ok("OK"));
 app.MapControllers();
 
 using (var scope = app.Services.CreateScope())
@@ -153,7 +159,6 @@ using (var scope = app.Services.CreateScope())
     }
     catch
     {
-        // �viter le crash au d�marrage si les migrations/provider ne correspondent pas
     }
 
     try
@@ -163,7 +168,6 @@ using (var scope = app.Services.CreateScope())
     }
     catch
     {
-        // �viter le crash si seed d�pend d'une base non pr�te
     }
 }
 
