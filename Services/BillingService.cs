@@ -544,6 +544,7 @@ public class BillingService
                         inv.Status = InvoiceStatus.Brouillon;
                         inv.PaidAmount = paidAmount;
 
+                        _db.InvoiceLines.RemoveRange(inv.Lines);
                         inv.Lines.Clear();
                     }
 
@@ -621,9 +622,17 @@ public class BillingService
 
                     result.Add(ToDto(inv));
                 }
+                catch (DbUpdateException ex)
+                {
+                    var detail = ex.InnerException?.Message ?? ex.GetBaseException().Message;
+                    throw new InvalidOperationException(
+                        $"Erreur feuille '{sheetName}' : {detail}", ex);
+                }
                 catch (Exception ex)
                 {
-                    throw new InvalidOperationException($"Erreur feuille '{sheetName}' : {ex.Message}");
+                    var detail = ex.GetBaseException().Message;
+                    throw new InvalidOperationException(
+                        $"Erreur feuille '{sheetName}' : {detail}", ex);
                 }
             }
 

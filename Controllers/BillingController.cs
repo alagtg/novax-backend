@@ -60,7 +60,7 @@ public class BillingController : BaseApiController
             return BadRequest(new
             {
                 message = ex.Message,
-                detail = ex.InnerException?.Message
+                detail = ex.GetBaseException().Message
             });
         }
     }
