@@ -291,8 +291,8 @@ public class BillingService
             Month = req.Month,
             DossierId = req.DossierId,
             Number = number,
-            IssueDate = req.IssueDate.Date,
-            DueDate = req.DueDate?.Date,
+            IssueDate = ToUtcDate(req.IssueDate),
+            DueDate = req.DueDate.HasValue ? ToUtcDate(req.DueDate.Value) : (DateTime?)null,
             Status = req.Status,
             PaidAmount = req.PaidAmount,
             PaymentType = req.PaymentType
@@ -341,12 +341,13 @@ public class BillingService
         inv.Year = req.Year;
         inv.Month = req.Month;
         inv.DossierId = req.DossierId;
-        inv.IssueDate = req.IssueDate.Date;
-        inv.DueDate = req.DueDate?.Date;
+        inv.IssueDate = ToUtcDate(req.IssueDate);
+        inv.DueDate = req.DueDate.HasValue ? ToUtcDate(req.DueDate.Value) : (DateTime?)null;
         inv.Status = req.Status;
         inv.PaidAmount = req.PaidAmount;
         inv.PaymentType = req.PaymentType;
 
+        _db.InvoiceLines.RemoveRange(inv.Lines);
         inv.Lines.Clear();
 
         foreach (var l in req.Lines)
@@ -441,7 +442,11 @@ public class BillingService
     // =========================================================
     // IMPORT WORKBOOK (TON CAS REEL)
     // =========================================================
-
+    private static DateTime ToUtcDate(DateTime value)
+    {
+        var dateOnly = value.Date;
+        return DateTime.SpecifyKind(dateOnly, DateTimeKind.Utc);
+    }   
     public async Task<List<InvoiceDto>> ImportWorkbookInvoices(int year, int selectedMonth, IFormFile file)
     {
         if (file == null || file.Length == 0)
@@ -526,7 +531,7 @@ public class BillingService
                             Month = selectedMonth,
                             DossierId = dossier.Id,
                             Number = invoiceNumber,
-                            IssueDate = issueDate.Date,
+                            IssueDate = ToUtcDate(issueDate),
                             Status = InvoiceStatus.Brouillon,
                             PaidAmount = paidAmount
                         };
@@ -540,7 +545,7 @@ public class BillingService
                         inv.Month = selectedMonth;
                         inv.DossierId = dossier.Id;
                         inv.Number = invoiceNumber;
-                        inv.IssueDate = issueDate.Date;
+                        inv.IssueDate = ToUtcDate(issueDate);
                         inv.Status = InvoiceStatus.Brouillon;
                         inv.PaidAmount = paidAmount;
 
