@@ -618,7 +618,15 @@ public class BillingService
                         factureCreee: true,
                         facturePayee: inv.Status == InvoiceStatus.Payee);
 
-                    await SaveWorksheetPdfToDisk(originalWorkbookPath, sheetName, inv.Id, inv.Year, inv.Month, inv.Number);
+                    try
+                    {
+                        await SaveWorksheetPdfToDisk(originalWorkbookPath, sheetName, inv.Id, inv.Year, inv.Month, inv.Number);
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"PDF Excel non généré pour {sheetName}: {ex.Message}");
+                        await SaveGeneratedPdfToDisk(inv.Id, inv.Year, inv.Month, inv.Number);
+                    }
 
                     inv = await _db.Invoices
                         .Include(x => x.Dossier)

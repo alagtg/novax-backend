@@ -10800,6 +10800,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026--C_20260406115859398.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026--C_20260406132658884.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026--C_20260406132658884.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>fd75fyblk6</Fingerprint>
+      <Integrity>bSTVY2pPj6TbVSfTJ9nus9fWI86KFtkcz8AU+jQUHJ4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026--C_20260406132658884.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-110-C_20260317093133076.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -10890,6 +10908,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-110-C_20260406132227805.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-110-C_20260406132500988.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-110-C_20260406132500988.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>9phct6magl</Fingerprint>
+      <Integrity>YybSDR476Xn1ajRgOG5vbVGobLFhdPwtsI0N8XjmySQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-110-C_20260406132500988.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-111-C_20260317093134995.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -10961,6 +10997,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-111-C_20260406132231862.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-111-C_20260406132504902.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-111-C_20260406132504902.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ggsxp4miha</Fingerprint>
+      <Integrity>UDcIdM0bcDpRwEPtUcqXroxbdQlW7WlWTG+B9tEJWu4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-111-C_20260406132504902.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-112-C_20260317093136064.pdf'))">
       <SourceType>Package</SourceType>
@@ -11034,6 +11088,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-112-C_20260406132234791.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-112-C_20260406132507666.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-112-C_20260406132507666.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>toncqtdao2</Fingerprint>
+      <Integrity>E781CtKg15XehIJSxc4kBiATDdfhpuqrYKfQp0Rksiw=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-112-C_20260406132507666.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-113-C_20260317093137789.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -11087,6 +11159,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-113-C_20260406115714458.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-113-C_20260406132510445.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-113-C_20260406132510445.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>4k2tfakaqz</Fingerprint>
+      <Integrity>zLa+kqfXT27hmhwFbgHqjjCyPoGlBoJX4W7GFTmExUQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-113-C_20260406132510445.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-114-C_20260317093138939.pdf'))">
       <SourceType>Package</SourceType>
@@ -11142,6 +11232,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-114-C_20260406115717432.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-114-C_20260406132513228.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-114-C_20260406132513228.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ock1w6svp5</Fingerprint>
+      <Integrity>SJWhHtaiVSwB4UsraSksOKQw8Xz7eWLFr2gAX0aJUFE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-114-C_20260406132513228.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-115-C_20260317093140973.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -11195,6 +11303,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-115-C_20260406115720168.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-115-C_20260406132516084.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-115-C_20260406132516084.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>igu5f7cdta</Fingerprint>
+      <Integrity>chTCNnS4MhlZYN/HiV2uqXLpbW++ZTULxGuB1Ndy1MI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-115-C_20260406132516084.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-116-C_20260317093142199.pdf'))">
       <SourceType>Package</SourceType>
@@ -11250,6 +11376,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-116-C_20260406115723232.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-116-C_20260406132518725.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-116-C_20260406132518725.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>fy4nl0ivlq</Fingerprint>
+      <Integrity>KXJ/n8yVdhjNTn35CgRNK4fn+Ir6QSj3VzyB92KZiOE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-116-C_20260406132518725.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-117-C_20260317093143958.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -11303,6 +11447,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-117-C_20260406115726328.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-117-C_20260406132521293.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-117-C_20260406132521293.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>m7ezs43fa1</Fingerprint>
+      <Integrity>TrG97+xAjJCSL7KvN/f8VFI+LMyTwH7maC8IkSN3PKk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-117-C_20260406132521293.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-118-C_20260317093145299.pdf'))">
       <SourceType>Package</SourceType>
@@ -11358,6 +11520,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-118-C_20260406115729375.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-118-C_20260406132524100.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-118-C_20260406132524100.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>7ddwxx8s6s</Fingerprint>
+      <Integrity>q3ChN9ho9tx78go65DZm+7rDPf3rIhWSQgH0fKk5K74=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-118-C_20260406132524100.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-119-C_20260317093147326.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -11411,6 +11591,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-119-C_20260406115731922.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-119-C_20260406132526814.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-119-C_20260406132526814.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>gxpqhyd7xr</Fingerprint>
+      <Integrity>xA6l0NbnO/YhiqzoJYBCQIQyetNPD6FhA2v9KsZybMQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-119-C_20260406132526814.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-120-C_20260317093148584.pdf'))">
       <SourceType>Package</SourceType>
@@ -11466,6 +11664,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-120-C_20260406115734624.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-120-C_20260406132529960.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-120-C_20260406132529960.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>tn1gixqee8</Fingerprint>
+      <Integrity>aQKVbE5/QEE5BVKzcqbD3AWlNwkrtftpEQti36JorVs=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-120-C_20260406132529960.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-121-C_20260317093150707.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -11519,6 +11735,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-121-C_20260406115737372.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-121-C_20260406132532703.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-121-C_20260406132532703.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>es2svwv6d4</Fingerprint>
+      <Integrity>4pOndKLChzGoiLypEigMw3xzD/U3lYopZVeTNmXU/ps=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-121-C_20260406132532703.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-122-C_20260317093151923.pdf'))">
       <SourceType>Package</SourceType>
@@ -11574,6 +11808,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-122-C_20260406115740046.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-122-C_20260406132535405.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-122-C_20260406132535405.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ks6pu5mwax</Fingerprint>
+      <Integrity>XJ8mHcrXt/vSoYaRuBChIuY0cXFmcrcvpi1Xuse27x4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-122-C_20260406132535405.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-123-C_20260317093154037.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -11627,6 +11879,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-123-C_20260406115742512.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-123-C_20260406132538218.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-123-C_20260406132538218.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>1246enwtgq</Fingerprint>
+      <Integrity>99sIR12R9UTIBjgiovJ8quJ9cLg/XcaSBxNz2GIzNjo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-123-C_20260406132538218.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-124-C_20260317093155360.pdf'))">
       <SourceType>Package</SourceType>
@@ -11682,6 +11952,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-124-C_20260406115744897.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-124-C_20260406132540868.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-124-C_20260406132540868.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>5qqmrm6nuv</Fingerprint>
+      <Integrity>M5xFJjwy142bmAeG6znYplw19iXWZSEFUFdJ0UAYPKo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-124-C_20260406132540868.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-125-C_20260317093157385.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -11735,6 +12023,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-125-C_20260406115747438.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-125-C_20260406132543466.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-125-C_20260406132543466.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>mozb4kqwez</Fingerprint>
+      <Integrity>moICkMZR+TuKsZQCqmKdLE1kavwrX9q2Jwa6DXcLolo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-125-C_20260406132543466.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-126-C_20260317093158564.pdf'))">
       <SourceType>Package</SourceType>
@@ -11790,6 +12096,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-126-C_20260406115749969.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-126-C_20260406132546534.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-126-C_20260406132546534.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>fttye7ju18</Fingerprint>
+      <Integrity>jTqbaiaDMaDtsmwguXYqF9NZWV4XcSb5deY73IDIRYQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-126-C_20260406132546534.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-127-C_20260317093200675.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -11843,6 +12167,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-127-C_20260406115752427.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-127-C_20260406132550263.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-127-C_20260406132550263.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>zum2a5d0mu</Fingerprint>
+      <Integrity>Oy7p127Br0E0R8jAxI2UimRKbqw0N1OoSMy7YSntZRY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-127-C_20260406132550263.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-128-C_20260317093201863.pdf'))">
       <SourceType>Package</SourceType>
@@ -11898,6 +12240,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-128-C_20260406115754828.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-128-C_20260406132553105.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-128-C_20260406132553105.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>nt9486gumm</Fingerprint>
+      <Integrity>u2qqXbGkVoA021QEWkYFLDwnhdy1gRos/dilcMhhKhY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-128-C_20260406132553105.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-130-C_20260317093203851.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -11951,6 +12311,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-130-C_20260406115757246.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-130-C_20260406132555771.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-130-C_20260406132555771.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>u85g9snz9s</Fingerprint>
+      <Integrity>crgNj1jCH3KzKWFdQaN9NaryTOCqpvWMqZZf7Z+vAs0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-130-C_20260406132555771.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-131-C_20260317093204994.pdf'))">
       <SourceType>Package</SourceType>
@@ -12006,6 +12384,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-131-C_20260406115759668.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-131-C_20260406132558138.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-131-C_20260406132558138.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>z8zoihlozi</Fingerprint>
+      <Integrity>jbGu+aw41SPn8qcV0hDJVIBnixJpOP0o2fAN5SQoMLY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-131-C_20260406132558138.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-132-C_20260317093207112.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -12059,6 +12455,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-132-C_20260406115802149.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-132-C_20260406132600488.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-132-C_20260406132600488.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>f1fftisu6b</Fingerprint>
+      <Integrity>4/5k6bvIVoFLc4wv+CRsyybMhqv6Eh2n4V6iWbvsy94=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-132-C_20260406132600488.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-133-C_20260317093208301.pdf'))">
       <SourceType>Package</SourceType>
@@ -12114,6 +12528,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-133-C_20260406115804762.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-133-C_20260406132602844.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-133-C_20260406132602844.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>28vhecjktz</Fingerprint>
+      <Integrity>UmY3eMhvO5hCaI/osZ2Mj/FY1073zD91u1mikQCNOTY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-133-C_20260406132602844.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-134-C_20260317093210228.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -12167,6 +12599,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-134-C_20260406115807456.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-134-C_20260406132605221.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-134-C_20260406132605221.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>i0fyhgdu9v</Fingerprint>
+      <Integrity>fj6lhuo+l3TQayNPzQwYcfiKsKrZFwxvdLOFPvvbWaw=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-134-C_20260406132605221.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-135-C_20260317093211469.pdf'))">
       <SourceType>Package</SourceType>
@@ -12222,6 +12672,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-135-C_20260406115810307.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-135-C_20260406132607903.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-135-C_20260406132607903.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>osng562019</Fingerprint>
+      <Integrity>ePlOWGIlPpYVUAmrb9W4V/vmDA+82KzwaKzexuQaFkc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-135-C_20260406132607903.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-136-C_20260317093213333.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -12275,6 +12743,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-136-C_20260406115813004.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-136-C_20260406132610288.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-136-C_20260406132610288.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>5g6blvadgx</Fingerprint>
+      <Integrity>mxkwAOfZOj2nHN8nZCx9AUioXFgvf3oDVHn7/AhGyno=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-136-C_20260406132610288.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-137-C_20260317093214564.pdf'))">
       <SourceType>Package</SourceType>
@@ -12330,6 +12816,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-137-C_20260406115815891.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-137-C_20260406132612729.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-137-C_20260406132612729.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>krhulziktg</Fingerprint>
+      <Integrity>cHaNXC9yI/EptoGougz01mMKme/85Y6TPbqZoiNA7BE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-137-C_20260406132612729.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-138-C_20260317093216719.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -12383,6 +12887,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-138-C_20260406115820010.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-138-C_20260406132615115.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-138-C_20260406132615115.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>6ok05f6891</Fingerprint>
+      <Integrity>pokpc6ZWgFsMScPb6jNyMfL5mXRdPeDaPPuSxv64VYk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-138-C_20260406132615115.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-139-C_20260317093218160.pdf'))">
       <SourceType>Package</SourceType>
@@ -12438,6 +12960,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-139-C_20260406115822732.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-139-C_20260406132617439.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-139-C_20260406132617439.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>n4v68bssf7</Fingerprint>
+      <Integrity>F7cGLlhtF/hZBpthLkeGXcgMACWf8up6Q3UD35IJCg0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-139-C_20260406132617439.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-140-C_20260317093220206.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -12491,6 +13031,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-140-C_20260406115825403.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-140-C_20260406132620107.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-140-C_20260406132620107.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ym9q6nge6f</Fingerprint>
+      <Integrity>SrXr+ai87QkZi/FJ52S8TWAFB7fyfpPh0w+23ymZ9P0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-140-C_20260406132620107.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-141-C_20260317093221368.pdf'))">
       <SourceType>Package</SourceType>
@@ -12546,6 +13104,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-141-C_20260406115828456.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-141-C_20260406132622526.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-141-C_20260406132622526.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>6n2t7x48vi</Fingerprint>
+      <Integrity>on3Mb7M/04liXruTL6XVPtXRq/68lv5+3V3zBPHlxwU=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-141-C_20260406132622526.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-142-C_20260317093223249.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -12599,6 +13175,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-142-C_20260406115830968.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-142-C_20260406132624986.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-142-C_20260406132624986.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ejjftae79e</Fingerprint>
+      <Integrity>VqpLbBLrzmrJqsii5JlpW68P7U3caYF30xVrSMSgBds=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-142-C_20260406132624986.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-143-C_20260317093224426.pdf'))">
       <SourceType>Package</SourceType>
@@ -12654,6 +13248,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-143-C_20260406115833458.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-143-C_20260406132627912.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-143-C_20260406132627912.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>bmpa7hg4l1</Fingerprint>
+      <Integrity>zRRN7EdQNvPtFc97pOm/u2awExkI3kH4tyFanwfWDPQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-143-C_20260406132627912.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-144-C_20260317093226159.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -12707,6 +13319,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-144-C_20260406115836591.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-144-C_20260406132630697.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-144-C_20260406132630697.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>xhhk245rf8</Fingerprint>
+      <Integrity>a4hYGlgBdQWxzDYNZrdvOhO1JbK9uksMfgS163x7m1I=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-144-C_20260406132630697.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-145-C_20260317093227331.pdf'))">
       <SourceType>Package</SourceType>
@@ -12762,6 +13392,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-145-C_20260406115839136.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-145-C_20260406132633620.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-145-C_20260406132633620.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>p0os0aaciy</Fingerprint>
+      <Integrity>Z4+V9cD4O56Ysz6xavueM2vCWuHzrk3hYZGXF+0lUcw=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-145-C_20260406132633620.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-146-C_20260317093229288.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -12815,6 +13463,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-146-C_20260406115841695.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-146-C_20260406132636793.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-146-C_20260406132636793.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ak3kd6rd44</Fingerprint>
+      <Integrity>CkS/z3fasDJazUKwq11riv8OOFI9GoSE1StPPHkqSW4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-146-C_20260406132636793.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-147-C_20260317093230411.pdf'))">
       <SourceType>Package</SourceType>
@@ -12870,6 +13536,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-147-C_20260406115844206.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-147-C_20260406132639786.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-147-C_20260406132639786.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>w7ddxl3g7h</Fingerprint>
+      <Integrity>1BbtAAHpGQfJ9hNiz7bJfp5fkqJxecbMXLp1+JWSH2I=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-147-C_20260406132639786.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-148-C_20260317093232185.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -12923,6 +13607,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-148-C_20260406115846792.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-148-C_20260406132642382.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-148-C_20260406132642382.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>n5cln29ap9</Fingerprint>
+      <Integrity>NQBbh5RhkZ3Q0NkKAZraknA4psaih+RN/GV7rezO5GE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-148-C_20260406132642382.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-149-C_20260317093233241.pdf'))">
       <SourceType>Package</SourceType>
@@ -12978,6 +13680,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-149-C_20260406115849204.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-149-C_20260406132644769.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-149-C_20260406132644769.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>a1d6a06n7z</Fingerprint>
+      <Integrity>fvF5WkQoNiQdXVcjEzLA+IdRVwwFDndbH7eJHO/2+hQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-149-C_20260406132644769.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-150-C_20260317093235113.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -13031,6 +13751,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-150-C_20260406115851654.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-150-C_20260406132647395.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-150-C_20260406132647395.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>h94ulyzol7</Fingerprint>
+      <Integrity>62EAndWYIMbu5Ya4NmbZemcv90L/zTPV5eG47Tis8GA=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-150-C_20260406132647395.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-151-C_20260317093236065.pdf'))">
       <SourceType>Package</SourceType>
@@ -13086,6 +13824,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-151-C_20260406115854083.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-151-C_20260406132650341.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-151-C_20260406132650341.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>v5bellw8fq</Fingerprint>
+      <Integrity>/SYxSIsafFL/3Uj3qSwsPHnqYwsDYeugQm+4fcOLaFY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-151-C_20260406132650341.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-152-C_20260317093237962.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -13139,6 +13895,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-152-C_20260406115856557.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-152-C_20260406132653956.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-152-C_20260406132653956.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>v65iikxnfy</Fingerprint>
+      <Integrity>x9yem3Gk+BZLr/jVIKPlTxF8V4ApWYKO0uD8LkE7q08=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-152-C_20260406132653956.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-153-C_20260317093240972.pdf'))">
       <SourceType>Package</SourceType>
@@ -13194,6 +13968,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-153-C_20260406115901816.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-153-C_20260406132701848.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-153-C_20260406132701848.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>zgr2jrwqze</Fingerprint>
+      <Integrity>k7bXjCOgxD1IrMStBgfOAHkv6Faa6mC5+t28Wx76c6M=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-153-C_20260406132701848.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-154-C_20260317093242044.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -13247,6 +14039,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-154-C_20260406115904908.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-154-C_20260406132704487.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-154-C_20260406132704487.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ckcagdm4vu</Fingerprint>
+      <Integrity>5N2o6Hht/QKxg7Utb85Ld0hWnmGD4BFb1xbwVB2ukt0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-154-C_20260406132704487.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-155-C_20260317093243823.pdf'))">
       <SourceType>Package</SourceType>
@@ -13302,6 +14112,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-155-C_20260406115907550.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-155-C_20260406132706941.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-155-C_20260406132706941.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>o21k5qymhc</Fingerprint>
+      <Integrity>kFCCxc8SryPvnNlQuxaBrq+J4FA+VFLArVE2GFA7wuM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-155-C_20260406132706941.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-156-C_20260317093244918.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -13355,6 +14183,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-156-C_20260406115909981.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-156-C_20260406132709547.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-156-C_20260406132709547.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>qmfzih04a6</Fingerprint>
+      <Integrity>HpCZcuTZ/pmM23BZ3Nu3v1KjYU+qN2IOkd9IjO3/Lh8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-156-C_20260406132709547.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-157-C_20260317093246672.pdf'))">
       <SourceType>Package</SourceType>
@@ -13410,6 +14256,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-157-C_20260406115912457.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-157-C_20260406132712871.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-157-C_20260406132712871.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>w0fhfbw4jx</Fingerprint>
+      <Integrity>UOFT2ruoMxld6qfjEiRSSAFpfiQG30PQp2wJ/5s0XXY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-157-C_20260406132712871.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-158-C_20260317093247762.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -13463,6 +14327,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-158-C_20260406115914915.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-158-C_20260406132715932.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-158-C_20260406132715932.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>rgzso6wpy3</Fingerprint>
+      <Integrity>i9Jfq/5ZQiIcMg4TQQvekcWc8wZWq73Xm1Sq/mEK4D0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-158-C_20260406132715932.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-159-C_20260317093249765.pdf'))">
       <SourceType>Package</SourceType>
@@ -13518,6 +14400,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-159-C_20260406115917396.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-159-C_20260406132718320.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-159-C_20260406132718320.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>pakqhpqwpz</Fingerprint>
+      <Integrity>v8GKvDMhWJ2hj8UdMfmWT9DwHQfvKte2PJFHVBHvhh4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-159-C_20260406132718320.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-160-C_20260317093251106.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -13571,6 +14471,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-160-C_20260406115919830.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-160-C_20260406132720798.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-160-C_20260406132720798.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>rbmp0ydnul</Fingerprint>
+      <Integrity>R5WJ+rGjCMdA6ldDGNK8vQnc9aFI5fByW1srnHK5DRs=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-160-C_20260406132720798.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-161-C_20260317093252918.pdf'))">
       <SourceType>Package</SourceType>
@@ -13626,6 +14544,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-161-C_20260406115922862.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-161-C_20260406132723427.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-161-C_20260406132723427.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>9sotpz01nu</Fingerprint>
+      <Integrity>R3hIbaccjqDCGbxRS0rZg7vZOUbfHzcl0Sw0XDCauNg=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-161-C_20260406132723427.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-162-C_20260317093254006.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -13679,6 +14615,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-162-C_20260406115926320.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-162-C_20260406132725921.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-162-C_20260406132725921.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>526kt43jid</Fingerprint>
+      <Integrity>U+cNKa3H3n+qBQICmDIOeY+zBbcxv/R7YVSXTOncqzM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-162-C_20260406132725921.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-163-C_20260317093255733.pdf'))">
       <SourceType>Package</SourceType>
@@ -13734,6 +14688,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-163-C_20260406115929118.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-163-C_20260406132728550.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-163-C_20260406132728550.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>1w7uem75zb</Fingerprint>
+      <Integrity>j+ZZNJFkPrHBXpjRF0/YV82gr5ZFC/oW5RG51RZGsMw=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-163-C_20260406132728550.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-164-C_20260317093256866.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -13787,6 +14759,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-164-C_20260406115931656.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-164-C_20260406132731086.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-164-C_20260406132731086.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>umo7tnlc3h</Fingerprint>
+      <Integrity>ij7gRfLfeALZcfH82L2y6NOSqIFSoo5vBi9z3k58M/Y=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-164-C_20260406132731086.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-165-C_20260317093258677.pdf'))">
       <SourceType>Package</SourceType>
@@ -13842,6 +14832,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-165-C_20260406115934070.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-165-C_20260406132734063.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-165-C_20260406132734063.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>eyy101ngrv</Fingerprint>
+      <Integrity>yoTubhfTWHnyKjTCwxXkLjAZoAeqnen8HGoz5TOp89I=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-165-C_20260406132734063.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-166-C_20260317093300077.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -13895,6 +14903,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-166-C_20260406115936583.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-166-C_20260406132736448.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-166-C_20260406132736448.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>g3hgdq0hfl</Fingerprint>
+      <Integrity>jM/idQQDUTwP8gcGiisbdx2Fvzu1nNH5RStRTD+ihbo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-166-C_20260406132736448.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-167-C_20260317093301788.pdf'))">
       <SourceType>Package</SourceType>
@@ -13950,6 +14976,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-167-C_20260406115939094.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-167-C_20260406132738898.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-167-C_20260406132738898.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>togtysrz9y</Fingerprint>
+      <Integrity>Q0SvtuNUv6i+DVv14HoLUxpbVWul0YvowVO0jazdhcU=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-167-C_20260406132738898.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-168-C_20260317093303015.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -14003,6 +15047,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-168-C_20260406115941635.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-168-C_20260406132741594.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-168-C_20260406132741594.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ytfdfx0ial</Fingerprint>
+      <Integrity>ZqQX+BElC8F2yE+labh0BteVua5jIHy/ezmvhvSAzJg=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-168-C_20260406132741594.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-169-C_20260317093304944.pdf'))">
       <SourceType>Package</SourceType>
@@ -14058,6 +15120,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-169-C_20260406115944021.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-169-C_20260406132744643.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-169-C_20260406132744643.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>zwqyymcvkc</Fingerprint>
+      <Integrity>PUkDGaDerQW6dG8fulMTjF9CxeJNXMUa9Lm9i6xKLB0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-169-C_20260406132744643.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-170-C_20260317093305973.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -14111,6 +15191,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-170-C_20260406115946581.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-170-C_20260406132747598.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-170-C_20260406132747598.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>mxejtqewaq</Fingerprint>
+      <Integrity>pmj5nCL8WU7S6tKhyMwF8Ba/6yXJtacynjABG+OOnS0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-170-C_20260406132747598.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-171-C_20260317093307963.pdf'))">
       <SourceType>Package</SourceType>
@@ -14166,6 +15264,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-171-C_20260406115949053.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-171-C_20260406132751416.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-171-C_20260406132751416.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>fdpk30fdwh</Fingerprint>
+      <Integrity>jS/1asJQDVqoOkU7N28wyj2rjV6hw0rA+qusAejgVik=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-171-C_20260406132751416.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-172-C_20260317093309150.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -14219,6 +15335,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-172-C_20260406115951525.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-172-C_20260406132754440.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-172-C_20260406132754440.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>6dhczlrvvi</Fingerprint>
+      <Integrity>6slAbs62ehUnuJiSC2y9uvkE1mb6jf7+EbRQaLCGcX8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-172-C_20260406132754440.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-173-C_20260317093310983.pdf'))">
       <SourceType>Package</SourceType>
@@ -14274,6 +15408,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-173-C_20260406115953928.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-173-C_20260406132756953.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-173-C_20260406132756953.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>hf39f62nn9</Fingerprint>
+      <Integrity>naBXbnxFINFrx1OtUN2T0FWZz1XTUcRdUiktPeY0ci8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-173-C_20260406132756953.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-174-C_20260317093312137.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -14327,6 +15479,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-174-C_20260406115956373.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-174-C_20260406132800123.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-174-C_20260406132800123.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>hxgu6nyz6l</Fingerprint>
+      <Integrity>y+wOhMM9eXejyAztkoSSnmeDK8wYCVlm1raow8+yHO4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-174-C_20260406132800123.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-175-C_20260317093313863.pdf'))">
       <SourceType>Package</SourceType>
@@ -14382,6 +15552,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-175-C_20260406115958822.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-175-C_20260406132803134.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-175-C_20260406132803134.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>rxqx28uhah</Fingerprint>
+      <Integrity>YXcrredgoE7PkbrBvILV7JgdtzbBsFj2OrPcSi2i3B0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-175-C_20260406132803134.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-176-C_20260317093315013.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -14435,6 +15623,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-176-C_20260406120001278.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-176-C_20260406132805996.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-176-C_20260406132805996.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>c06jmhusq9</Fingerprint>
+      <Integrity>LD+X9NgfXjNFW2vYo3F+Nboh1K4CVbKaBiaSTIRMZl0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-176-C_20260406132805996.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-177-C_20260317093316758.pdf'))">
       <SourceType>Package</SourceType>
@@ -14490,6 +15696,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-177-C_20260406120003643.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-177-C_20260406132809441.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-177-C_20260406132809441.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>6fal98wqy6</Fingerprint>
+      <Integrity>/o6mnrYt1B6x7XRlR3wo5tz/UgpVmhZDN3Od0tVT1iA=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-177-C_20260406132809441.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-178-C_20260317093317898.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -14543,6 +15767,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-178-C_20260406120006089.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-178-C_20260406132813118.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-178-C_20260406132813118.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ky6hoslun4</Fingerprint>
+      <Integrity>fBWMiJ5ovwVc5tSx0NzbstK55PqrAKEgnZM1xZ/kx+I=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-178-C_20260406132813118.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-179-C_20260317093319752.pdf'))">
       <SourceType>Package</SourceType>
@@ -14598,6 +15840,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-179-C_20260406120008516.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-179-C_20260406132816229.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-179-C_20260406132816229.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>n22it91s6j</Fingerprint>
+      <Integrity>ARQMxbrSrYvtpRaDK/Hr2XgvPoS5C1VB9ohvxb3bA7Q=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-179-C_20260406132816229.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-180-C_20260317093321094.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -14651,6 +15911,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-180-C_20260406120011084.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-180-C_20260406132819518.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-180-C_20260406132819518.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>0tze6tji0f</Fingerprint>
+      <Integrity>xLZjo3LwFORvFY6PtrJfpV/DRJnKenGrOa5f59KBwyc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-180-C_20260406132819518.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-181-C_20260317093323214.pdf'))">
       <SourceType>Package</SourceType>
@@ -14706,6 +15984,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-181-C_20260406120013693.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-181-C_20260406132822914.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-181-C_20260406132822914.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>zffvo7vogc</Fingerprint>
+      <Integrity>7+MQA5xMsCoSffkZyu/7nQHV1X9M2HK+2GEK38dffmE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-181-C_20260406132822914.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-182-C_20260317093324498.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -14759,6 +16055,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-182-C_20260406120016311.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-182-C_20260406132826608.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-182-C_20260406132826608.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>2oz4aomx66</Fingerprint>
+      <Integrity>bihNBhh8lmi3zRemdw8oFRD7+Etw70KWSTpUdXAgCP0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-182-C_20260406132826608.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-183-C_20260317093326465.pdf'))">
       <SourceType>Package</SourceType>
@@ -14814,6 +16128,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-183-C_20260406120018940.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-183-C_20260406132830197.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-183-C_20260406132830197.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>5myojtz77d</Fingerprint>
+      <Integrity>PTzr4lGojt0USj+4prtAFqCr00QAwB5F/8ZxOhdEpr0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-183-C_20260406132830197.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-184-C_20260317093327841.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -14867,6 +16199,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-184-C_20260406120021633.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-184-C_20260406132834764.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-184-C_20260406132834764.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>wm5lk5asdp</Fingerprint>
+      <Integrity>yHfr3z3MzkJfU6eiG1jwWJYjZWc+p+mUSapwPifIZHk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-184-C_20260406132834764.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-185-C_20260317093329700.pdf'))">
       <SourceType>Package</SourceType>
@@ -14922,6 +16272,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-185-C_20260406120024300.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-185-C_20260406132838845.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-185-C_20260406132838845.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>oqq03lcwqy</Fingerprint>
+      <Integrity>YJ57vAc2xdNG7GioK1C8z8Vtf5TwXMT9la0s5Mrmwg0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-185-C_20260406132838845.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-186-C_20260317093330826.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -14975,6 +16343,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-186-C_20260406120026958.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-186-C_20260406132841759.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-186-C_20260406132841759.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>sgw430b2pk</Fingerprint>
+      <Integrity>XJAbhlKQDi95YM93+AdpHQYZlDksiTo3RBMpf9BTdtI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-186-C_20260406132841759.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-187-C_20260317093332759.pdf'))">
       <SourceType>Package</SourceType>
@@ -15030,6 +16416,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-187-C_20260406120030812.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-187-C_20260406132844665.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-187-C_20260406132844665.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>aq8ydlnqs1</Fingerprint>
+      <Integrity>svHRGgqEgL84OF3MTp2/hnpSXtx4BMiWxqkKaaCWoV4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-187-C_20260406132844665.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-188-C_20260317093333818.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -15083,6 +16487,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-188-C_20260406120034076.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-188-C_20260406132848036.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-188-C_20260406132848036.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>u1ihj6d8o4</Fingerprint>
+      <Integrity>Xu/uSf+nrlTPYREfXPQwYkT7jL98gMgG0jJc2ZszFr8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-188-C_20260406132848036.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-189-C_20260317093335783.pdf'))">
       <SourceType>Package</SourceType>
@@ -15138,6 +16560,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-189-C_20260406120036621.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-189-C_20260406132850804.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-189-C_20260406132850804.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>97m2a6slw7</Fingerprint>
+      <Integrity>GwFRqDIcFk6eGQHr1V6sDqHQZdJFgdjyCkSiMsLCUII=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-189-C_20260406132850804.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-190-C_20260317093336983.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -15191,6 +16631,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-190-C_20260406120039225.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-190-C_20260406132853724.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-190-C_20260406132853724.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>heg6o8euc9</Fingerprint>
+      <Integrity>d8/QoBnz3QrJHGO+GH5ElVevSu+2+tSkwr+k0QYf5m4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-190-C_20260406132853724.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-191-C_20260317093338845.pdf'))">
       <SourceType>Package</SourceType>
@@ -15246,6 +16704,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-191-C_20260406120041820.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-191-C_20260406132856691.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-191-C_20260406132856691.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>g8rtd0mm60</Fingerprint>
+      <Integrity>IDwdApe5fHYUsMTYhYkHnn8oSYmWtAFVEWzSXlUG7Gk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-191-C_20260406132856691.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-192-C_20260317093340137.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -15299,6 +16775,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-192-C_20260406120044326.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-192-C_20260406132859902.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-192-C_20260406132859902.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>u63et2jjyc</Fingerprint>
+      <Integrity>pnxld0D1W8QTrkLeWAhMr3svg7xMH8K/VLxs0SxJcJ0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-192-C_20260406132859902.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-193-C_20260317093342090.pdf'))">
       <SourceType>Package</SourceType>
@@ -15354,6 +16848,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-193-C_20260406120046840.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-193-C_20260406132902717.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-193-C_20260406132902717.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>y78sxnsf01</Fingerprint>
+      <Integrity>YurpUu/Lcmz/dgcl95pZTXg8MxLUa8JL0is1P/CsLXc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-193-C_20260406132902717.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-194-C_20260317093343138.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -15407,6 +16919,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-194-C_20260406120049383.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-194-C_20260406132906643.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-194-C_20260406132906643.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ewg5ckhzpa</Fingerprint>
+      <Integrity>zhAgNbcsoWRxov6vtZhnQ7haOT3jmznjq77+gQctNHY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-194-C_20260406132906643.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-195-C_20260317093344924.pdf'))">
       <SourceType>Package</SourceType>
@@ -15462,6 +16992,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-195-C_20260406120051875.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-195-C_20260406132910305.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-195-C_20260406132910305.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>xpcmw2s1mb</Fingerprint>
+      <Integrity>G65QikmAZ6OxHWItanRIZzDj81jho4PurpKv10k1/jo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-195-C_20260406132910305.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-196-C_20260317093346119.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -15515,6 +17063,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-196-C_20260406120054259.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-196-C_20260406132913252.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-196-C_20260406132913252.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>6mecepsfgi</Fingerprint>
+      <Integrity>AtmiqlSyh0PJddIpAgpVXR7iVzv3n9tZqo6chah2UmE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-196-C_20260406132913252.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-197-C_20260317093347928.pdf'))">
       <SourceType>Package</SourceType>
@@ -15570,6 +17136,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-197-C_20260406120056595.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-197-C_20260406132916169.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-197-C_20260406132916169.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>vle359k6cq</Fingerprint>
+      <Integrity>sxUJ3f5crnkWwIQTmDTkonXsSKxZ9zIuaW3YlBeEWoQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-197-C_20260406132916169.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-198-C_20260317093348962.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -15623,6 +17207,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-198-C_20260406120059057.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-198-C_20260406132918835.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-198-C_20260406132918835.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>wk1hx4lnd7</Fingerprint>
+      <Integrity>wHyOWvL1gxGgkjio/8OiXVFoIgcVexFeSA6/0RhdmUQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-198-C_20260406132918835.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-199-C_20260317093350886.pdf'))">
       <SourceType>Package</SourceType>
@@ -15678,6 +17280,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-199-C_20260406120101389.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-199-C_20260406132921280.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-199-C_20260406132921280.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>7ycb1ne7e5</Fingerprint>
+      <Integrity>TxP/1R3MhxtRaXwdYJVAmCcRjFZdoRun4Plyo9vZPIY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-199-C_20260406132921280.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-200-C_20260317093352115.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -15731,6 +17351,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-200-C_20260406120103853.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-200-C_20260406132924126.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-200-C_20260406132924126.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>pk6h7i8vln</Fingerprint>
+      <Integrity>d5Ud0NMfBNDoTUclLkj/HNospX+ktpCKWjHGH695D84=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-200-C_20260406132924126.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-201-C_20260317093353485.pdf'))">
       <SourceType>Package</SourceType>
@@ -15786,6 +17424,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-201-C_20260406120106422.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-201-C_20260406132927606.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-201-C_20260406132927606.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>mln09dkxz5</Fingerprint>
+      <Integrity>evR7UGSm78UaYoSOkgiEX6IMGPUCSqHPivXO9VbCmAg=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-201-C_20260406132927606.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-203-C_20260317093354694.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -15839,6 +17495,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-203-C_20260406120108751.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-203-C_20260406132931250.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-203-C_20260406132931250.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>cx1akcekka</Fingerprint>
+      <Integrity>wLNsusxscGWqnut4Myx5b/AOaW5W4WXiTfKiW+m7G8A=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-203-C_20260406132931250.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-204-C_20260317093356050.pdf'))">
       <SourceType>Package</SourceType>
@@ -15894,6 +17568,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-204-C_20260406120111144.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-204-C_20260406132934336.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-204-C_20260406132934336.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>5wh7xk3fom</Fingerprint>
+      <Integrity>qyh1k+hyApH8qOGXvzCmOTx//b6G3L0ds0R8MHXkfEw=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-204-C_20260406132934336.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-205-C_20260317093357371.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -15947,6 +17639,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-205-C_20260406120113577.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-205-C_20260406132936795.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-205-C_20260406132936795.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>jznilnleln</Fingerprint>
+      <Integrity>7wpRS9oekYRSFuhxgRT8PAMN5GSNpzb8u6q9SOFN56s=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-205-C_20260406132936795.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-206-C_20260317093358704.pdf'))">
       <SourceType>Package</SourceType>
@@ -16002,6 +17712,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-206-C_20260406120115935.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-206-C_20260406132939174.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-206-C_20260406132939174.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>m3x0eafelr</Fingerprint>
+      <Integrity>kk18ObCytZJBkeAFWNKl3WCziokTkf6w9QHUdEIRtpA=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-206-C_20260406132939174.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-fause-C_20260317093401151.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -16056,6 +17784,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-fause-C_20260406120120779.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-fause-C_20260406132944176.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/2026-fause-C_20260406132944176.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>fnd25zk8fk</Fingerprint>
+      <Integrity>m4L01djCEClL0l9S2cHZzM/nnqYXjOt08ghoSSFIswc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\2026-fause-C_20260406132944176.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\AV-2026-003-C_20260317093359914.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>YourProject.API</SourceId>
@@ -16109,6 +17855,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\AV-2026-003-C_20260406120118379.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\AV-2026-003-C_20260406132941712.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourProject.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourProject.API</BasePath>
+      <RelativePath>uploads/invoices/2026/04/AV-2026-003-C_20260406132941712.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>naxlrtd7d5</Fingerprint>
+      <Integrity>MUVfz3yRLhuS5lyvDJdOEswUr6PEkRvg/h+cPPW/d9w=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\04\AV-2026-003-C_20260406132941712.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\invoices\2026\06\2026--C_20260317093228945.pdf'))">
       <SourceType>Package</SourceType>
