@@ -16,25 +16,75 @@ public class LeavesController : BaseApiController
     public async Task<IActionResult> Mine()
     {
         if (!CurrentUserId.HasValue) return Unauthorized();
-        return Ok(await _leaves.GetMine(CurrentUserId.Value));
+
+        try
+        {
+            return Ok(await _leaves.GetMine(CurrentUserId.Value));
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(new
+            {
+                message = ex.Message,
+                detail = ex.GetBaseException().Message
+            });
+        }
     }
 
     [HttpPost]
     public async Task<IActionResult> Create([FromBody] CreateLeaveRequest req)
     {
         if (!CurrentUserId.HasValue) return Unauthorized();
-        return Ok(await _leaves.Create(CurrentUserId.Value, req));
+
+        try
+        {
+            var res = await _leaves.Create(CurrentUserId.Value, req);
+            return Ok(res);
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(new
+            {
+                message = ex.Message,
+                detail = ex.GetBaseException().Message
+            });
+        }
     }
 
     [HttpGet]
     [Authorize(Roles = "ADMIN")]
-    public async Task<IActionResult> All() => Ok(await _leaves.GetAll());
+    public async Task<IActionResult> All()
+    {
+        try
+        {
+            return Ok(await _leaves.GetAll());
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(new
+            {
+                message = ex.Message,
+                detail = ex.GetBaseException().Message
+            });
+        }
+    }
 
     [HttpPut("{id}/status")]
     [Authorize(Roles = "ADMIN")]
     public async Task<IActionResult> UpdateStatus(int id, [FromBody] UpdateLeaveStatusRequest req)
     {
-        var item = await _leaves.UpdateStatus(id, req);
-        return item == null ? NotFound() : Ok(item);
+        try
+        {
+            var item = await _leaves.UpdateStatus(id, req);
+            return item == null ? NotFound() : Ok(item);
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(new
+            {
+                message = ex.Message,
+                detail = ex.GetBaseException().Message
+            });
+        }
     }
 }
