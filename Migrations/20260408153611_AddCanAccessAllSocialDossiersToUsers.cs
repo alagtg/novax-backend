@@ -9,11 +9,11 @@ namespace YourProject.API.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AddColumn<bool>(
-                name: "CanAccessAllSocialDossiers",
-                table: "Users",
-                type: "bit",
-                nullable: false,
-                defaultValue: false);
+      name: "CanAccessAllSocialDossiers",
+      table: "Users",
+      type: "boolean",
+      nullable: false,
+      defaultValue: false);
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
