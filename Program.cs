@@ -90,8 +90,17 @@ builder.Services.AddCors(options =>
 builder.Services.AddScoped<IEmailSender, SmtpEmailSender>();
 
 var jwtKey = builder.Configuration["Jwt:Key"];
+var jwtIssuer = builder.Configuration["Jwt:Issuer"];
+var jwtAudience = builder.Configuration["Jwt:Audience"];
+
 if (string.IsNullOrWhiteSpace(jwtKey))
-    throw new InvalidOperationException("Jwt:Key manquant dans appsettings.json");
+    throw new InvalidOperationException("Jwt:Key manquant dans la configuration (appsettings ou variables d'environnement)");
+
+if (string.IsNullOrWhiteSpace(jwtIssuer))
+    throw new InvalidOperationException("Jwt:Issuer manquant dans la configuration");
+
+if (string.IsNullOrWhiteSpace(jwtAudience))
+    throw new InvalidOperationException("Jwt:Audience manquant dans la configuration");
 
 var keyBytes = Encoding.UTF8.GetBytes(jwtKey);
 
@@ -104,8 +113,8 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidateAudience = true,
             ValidateLifetime = true,
             ValidateIssuerSigningKey = true,
-            ValidIssuer = builder.Configuration["Jwt:Issuer"],
-            ValidAudience = builder.Configuration["Jwt:Audience"],
+            ValidIssuer = jwtIssuer,
+            ValidAudience = jwtAudience,
             IssuerSigningKey = new SymmetricSecurityKey(keyBytes)
         };
     });
