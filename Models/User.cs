@@ -9,7 +9,7 @@ public class User : BaseEntity
     public string PasswordHash { get; set; } = "";
     public UserRole Role { get; set; } = UserRole.EMPLOYE;
     public bool IsActive { get; set; } = true;
-
+    public bool CanAccessAllSocialDossiers { get; set; } = false;
     // Navigation
     public ICollection<DossierAssignment> Assignments { get; set; } = new List<DossierAssignment>();
 }

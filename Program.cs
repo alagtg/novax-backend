@@ -157,8 +157,10 @@ using (var scope = app.Services.CreateScope())
     {
         db.Database.Migrate();
     }
-    catch
+    catch (Exception ex)
     {
+        Console.WriteLine(ex.ToString());
+        throw;
     }
 
     try

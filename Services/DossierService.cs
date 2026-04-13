@@ -122,6 +122,10 @@ public class DossierService
     // ===============================
     // CREATE
     // ===============================
+    public async Task<User?> GetUserById(int id)
+    {
+        return await _db.Users.FirstOrDefaultAsync(x => x.Id == id);
+    }
     public async Task<DossierDto> Create(SaveDossierRequest req)
     {
         if (await _fiscalYearService.IsClosed(req.Year))

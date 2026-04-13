@@ -24,13 +24,29 @@ public class DossiersController : BaseApiController
         [FromQuery] ModuleType? module)
     {
         var isAdmin = User.IsInRole("ADMIN");
+
         if (!isAdmin)
         {
-            employeeId = CurrentUserId;
+            var currentUser = await _dossiers.GetUserById(CurrentUserId ?? 0);
+            if (currentUser == null) return Unauthorized();
+
+            var canAccessAllSocial =
+                module == ModuleType.Social &&
+                currentUser.CanAccessAllSocialDossiers;
+
+            if (!canAccessAllSocial)
+            {
+                employeeId = CurrentUserId;
+            }
+            else
+            {
+                employeeId = null; // voir tous les dossiers sociaux
+            }
         }
 
         var items = await _dossiers.Search(year, q, employeeId, module);
-        if (!isAdmin)
+
+        if (!User.IsInRole("ADMIN"))
         {
             foreach (var item in items)
             {

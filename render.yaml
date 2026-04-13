@@ -1,28 +1,12 @@
 services:
   - type: web
     name: novax-api
-services:
-  - type: web
-    name: novax-api
-    env: docker
+    env: dotnet
     rootDir: backend
-    dockerfilePath: ./Dockerfile
     plan: free
-    healthCheckPath: /healthz
-    envVars:
-      - key: ASPNETCORE_ENVIRONMENT
-        value: Production
-      - key: ConnectionStrings__DefaultConnection
-        sync: false
-      - key: Jwt__Key
-        sync: false
-      - key: Jwt__Issuer
-        sync: false
-      - key: Jwt__Audience
-        sync: false
-        rootDir: backend
     buildCommand: dotnet restore && dotnet build -c Release && dotnet publish -c Release -o out
     startCommand: dotnet out/YourProject.API.dll
+    healthCheckPath: /healthz
     envVars:
       - key: ASPNETCORE_ENVIRONMENT
         value: Production

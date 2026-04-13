@@ -34,8 +34,22 @@ public class TrackingController : BaseApiController
         var b = string.IsNullOrWhiteSpace(board) ? "Default" : board.Trim();
         var isAdmin = (CurrentRole ?? "").Equals("ADMIN", StringComparison.OrdinalIgnoreCase);
 
-        int? scopedUserId = isAdmin ? userId : CurrentUserId;
-        if (!isAdmin && !scopedUserId.HasValue) return Unauthorized();
+        int? scopedUserId;
+
+        if (isAdmin)
+        {
+            scopedUserId = userId;
+        }
+        else
+        {
+            if (!CurrentUserId.HasValue) return Unauthorized();
+
+            var canAccessAllSocial =
+                m == ModuleType.Social &&
+                await _tracking.UserCanAccessAllSocialDossiers(CurrentUserId.Value);
+
+            scopedUserId = canAccessAllSocial ? null : CurrentUserId;
+        }
 
         if (page.HasValue)
         {
@@ -119,8 +133,23 @@ public class TrackingController : BaseApiController
             return BadRequest("invalid module");
 
         var isAdmin = (CurrentRole ?? "").Equals("ADMIN", StringComparison.OrdinalIgnoreCase);
-        int? scopedUserId = isAdmin ? userId : CurrentUserId;
-        if (!isAdmin && !scopedUserId.HasValue) return Unauthorized();
+
+        int? scopedUserId;
+
+        if (isAdmin)
+        {
+            scopedUserId = userId;
+        }
+        else
+        {
+            if (!CurrentUserId.HasValue) return Unauthorized();
+
+            var canAccessAllSocial =
+                m == ModuleType.Social &&
+                await _tracking.UserCanAccessAllSocialDossiers(CurrentUserId.Value);
+
+            scopedUserId = canAccessAllSocial ? null : CurrentUserId;
+        }
 
         var pq = new PagedQuery
         {

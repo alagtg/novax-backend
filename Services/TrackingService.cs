@@ -430,10 +430,19 @@ public class TrackingService
             .Include(r => r.AssignedToUser)
             .Where(r => r.Year == year && r.Module == module && r.Board == board);
 
-        if (!isAdmin)
-            rowsQuery = rowsQuery.Where(r => r.AssignedToUserId == userId);
-        else if (userId.HasValue)
-            rowsQuery = rowsQuery.Where(r => r.AssignedToUserId == userId.Value);
+        // ✅ CORRECTION ICI
+        if (isAdmin)
+        {
+            if (userId.HasValue)
+                rowsQuery = rowsQuery.Where(r => r.AssignedToUserId == userId.Value);
+        }
+        else
+        {
+            // si userId a une valeur => employé normal = ses dossiers seulement
+            // si userId == null => accès global social = pas de filtre
+            if (userId.HasValue)
+                rowsQuery = rowsQuery.Where(r => r.AssignedToUserId == userId.Value);
+        }
 
         if (!string.IsNullOrWhiteSpace(q))
         {
@@ -486,22 +495,27 @@ public class TrackingService
             Items = pagedItems
         };
     }
-
     public async Task<YourProject.API.DTOs.Common.PagedResult<DTOs.Tracking.DossierLookDto>> LookPaged(
-        int year,
-        ModuleType module,
-        int? userId,
-        bool isAdmin,
-        string? q,
-        int page,
-        int pageSize)
+    int year,
+    ModuleType module,
+    int? userId,
+    bool isAdmin,
+    string? q,
+    int page,
+    int pageSize)
     {
         var query = AssignmentsQuery(year, module);
 
-        if (!isAdmin)
-            query = query.Where(a => a.UserId == userId);
-        else if (userId.HasValue)
-            query = query.Where(a => a.UserId == userId.Value);
+        if (isAdmin)
+        {
+            if (userId.HasValue)
+                query = query.Where(a => a.UserId == userId.Value);
+        }
+        else
+        {
+            if (userId.HasValue)
+                query = query.Where(a => a.UserId == userId.Value);
+        }
 
         if (!string.IsNullOrWhiteSpace(q))
         {
@@ -530,12 +544,20 @@ public class TrackingService
 
     private async Task EnsureRowsForAssignments(int year, ModuleType module, string board, int? userId, bool isAdmin)
     {
-        if (!isAdmin && !userId.HasValue) return;
-
         var assignQuery = AssignmentsQuery(year, module);
 
-        if (userId.HasValue)
-            assignQuery = assignQuery.Where(a => a.UserId == userId.Value);
+        if (isAdmin)
+        {
+            if (userId.HasValue)
+                assignQuery = assignQuery.Where(a => a.UserId == userId.Value);
+        }
+        else
+        {
+            // employé normal => filtré sur lui
+            // accès global social => userId null => pas de filtre
+            if (userId.HasValue)
+                assignQuery = assignQuery.Where(a => a.UserId == userId.Value);
+        }
 
         var assignments = await assignQuery
             .Select(a => new { a.DossierId, UserId = a.UserId, UserName = a.User!.FullName })
@@ -576,7 +598,6 @@ public class TrackingService
             await _db.SaveChangesAsync();
         }
     }
-
     public async Task<TrackingRowDto?> Ensure(int year, ModuleType module, string board, int dossierId, int currentUserId, bool isAdmin, int? assignedToUserId)
     {
         var uid = isAdmin ? (assignedToUserId ?? currentUserId) : currentUserId;
@@ -650,7 +671,20 @@ public class TrackingService
             .FirstOrDefaultAsync(r => r.Id == id);
 
         if (row == null) return null;
-        if (!isAdmin && row.AssignedToUserId != currentUserId) return null;
+
+        if (!isAdmin)
+        {
+            var canEdit =
+                row.AssignedToUserId == currentUserId;
+
+            if (!canEdit && row.Module == ModuleType.Social)
+            {
+                canEdit = await UserCanAccessAllSocialDossiers(currentUserId);
+            }
+
+            if (!canEdit)
+                return null;
+        }
 
         var payload = req.Data ?? new();
         DateTime? startedAt = null;
@@ -664,6 +698,7 @@ public class TrackingService
         }
 
         var currentData = payload;
+
         var actorName = await _db.Users.AsNoTracking()
             .Where(u => u.Id == currentUserId)
             .Select(u => u.FullName)
@@ -684,11 +719,14 @@ public class TrackingService
         audit["lastModifiedById"] = currentUserId;
         audit["lastModifiedByName"] = actorName;
         audit["lastModifiedAtUtc"] = DateTime.UtcNow;
-        audit["totalEditMinutes"] = Math.Max(0, GetAuditInt(audit, "totalEditMinutes")) + ComputeSpentMinutes(startedAt);
+        audit["totalEditMinutes"] =
+            Math.Max(0, GetAuditInt(audit, "totalEditMinutes")) + ComputeSpentMinutes(startedAt);
+
         currentData["__audit"] = audit;
 
         row.DataJson = Stringify(currentData);
         row.UpdatedAt = DateTime.UtcNow;
+
         await _db.SaveChangesAsync();
 
         return new TrackingRowDto
@@ -707,21 +745,22 @@ public class TrackingService
             UpdatedAt = row.UpdatedAt
         };
     }
-
     private static bool AutoSeed(ModuleType module, string board)
     {
         var b = (board ?? "").Trim().ToLowerInvariant();
 
-        // Social multi-lignes => pas d'auto seed
         if (module == ModuleType.Social &&
             (b == "autorisationtravail" ||
              b == "ruptureconventionnelle" ||
-             b == "salarieslicencies"))
+             b == "dpae" ||
+             b == "salarieslicencies" ||
+             b == "stc" ||
+             b == "blocregul" ||
+             b == "contactdecaisse"))
         {
             return false;
         }
 
-        // Juridique => vide au départ, seulement nouveaux dossiers / ajouts manuels
         if (module == ModuleType.Juridique)
         {
             return false;
@@ -729,7 +768,6 @@ public class TrackingService
 
         return true;
     }
-
     public async Task<TrackingRowDto?> Create(
         int year,
         ModuleType module,
@@ -822,7 +860,13 @@ public class TrackingService
             UpdatedAt = row.UpdatedAt
         };
     }
-
+    public async Task<bool> UserCanAccessAllSocialDossiers(int userId)
+    {
+        return await _db.Users
+            .Where(u => u.Id == userId && u.Role == UserRole.EMPLOYE && u.IsActive)
+            .Select(u => u.CanAccessAllSocialDossiers)
+            .FirstOrDefaultAsync();
+    }
     public async Task<bool> Delete(int id, int currentUserId, bool isAdmin)
     {
         var row = await _db.TrackingRows.FirstOrDefaultAsync(r => r.Id == id);

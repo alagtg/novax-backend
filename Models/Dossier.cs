@@ -15,6 +15,7 @@ public class Dossier : BaseEntity
     public string VatNumber { get; set; } = "";
     public string Rcs { get; set; } = "";
     public string Fj { get; set; } = "";
+
     // Adresse
     public string Address { get; set; } = "";
     public string City { get; set; } = "";

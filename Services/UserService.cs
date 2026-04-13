@@ -20,7 +20,8 @@ public class UserService
                 FullName = u.FullName,
                 Email = u.Email,
                 Role = u.Role,
-                IsActive = u.IsActive
+                IsActive = u.IsActive,
+                CanAccessAllSocialDossiers = u.CanAccessAllSocialDossiers
             })
             .ToListAsync();
     }
@@ -35,7 +36,8 @@ public class UserService
                 FullName = u.FullName,
                 Email = u.Email,
                 Role = u.Role,
-                IsActive = u.IsActive
+                IsActive = u.IsActive,
+                CanAccessAllSocialDossiers = u.CanAccessAllSocialDossiers
             })
             .FirstOrDefaultAsync();
     }
@@ -48,6 +50,7 @@ public class UserService
             Email = req.Email.Trim().ToLowerInvariant(),
             Role = req.Role,
             IsActive = req.IsActive,
+            CanAccessAllSocialDossiers = req.CanAccessAllSocialDossiers,
             PasswordHash = BCrypt.Net.BCrypt.HashPassword(req.Password)
         };
 
@@ -60,7 +63,8 @@ public class UserService
             FullName = user.FullName,
             Email = user.Email,
             Role = user.Role,
-            IsActive = user.IsActive
+            IsActive = user.IsActive,
+            CanAccessAllSocialDossiers = user.CanAccessAllSocialDossiers
         };
     }
 
@@ -73,6 +77,7 @@ public class UserService
         user.Email = req.Email.Trim().ToLowerInvariant();
         user.Role = req.Role;
         user.IsActive = req.IsActive;
+        user.CanAccessAllSocialDossiers = req.CanAccessAllSocialDossiers;
 
         await _db.SaveChangesAsync();
 
@@ -82,9 +87,11 @@ public class UserService
             FullName = user.FullName,
             Email = user.Email,
             Role = user.Role,
-            IsActive = user.IsActive
+            IsActive = user.IsActive,
+            CanAccessAllSocialDossiers = user.CanAccessAllSocialDossiers
         };
     }
+
     public async Task<bool> ChangePassword(int id, string newPassword)
     {
         var user = await _db.Users.FindAsync(id);

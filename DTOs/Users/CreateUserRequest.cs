@@ -9,4 +9,5 @@ public class CreateUserRequest
     public string Password { get; set; } = "";
     public UserRole Role { get; set; } = UserRole.EMPLOYE;
     public bool IsActive { get; set; } = true;
+    public bool CanAccessAllSocialDossiers { get; set; }
 }

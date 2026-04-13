@@ -8,4 +8,5 @@ public class UpdateUserRequest
     public string Email { get; set; } = "";
     public UserRole Role { get; set; } = UserRole.EMPLOYE;
     public bool IsActive { get; set; } = true;
+    public bool CanAccessAllSocialDossiers { get; set; }
 }
