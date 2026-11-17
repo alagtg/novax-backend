@@ -131,6 +131,13 @@ public class DossierService
         if (await _fiscalYearService.IsClosed(req.Year))
             throw new Exception("Année clôturée. Modification impossible.");
 
+        // Keep the global follow-up identical when the same dossier code is
+        // created for another fiscal year.
+        var existingPermanentFollowUp = await _db.Dossiers
+            .Where(x => x.Code == req.Code)
+            .OrderByDescending(x => x.Year)
+            .FirstOrDefaultAsync();
+
         var d = new Dossier
         {
             Year = req.Year,
@@ -149,8 +156,11 @@ public class DossierService
             PostalCode = req.PostalCode,
             Country = req.Country,
             Notes = req.Notes,
-            LettreMissionEnvoyee = req.LettreMissionEnvoyee,
-            MandatEnvoye = req.MandatEnvoye
+            LettreMissionEnvoyee = existingPermanentFollowUp?.LettreMissionEnvoyee ?? req.LettreMissionEnvoyee,
+            MandatEnvoye = existingPermanentFollowUp?.MandatEnvoye ?? req.MandatEnvoye,
+            FollowUpSupplier = existingPermanentFollowUp?.FollowUpSupplier ?? "",
+            FollowUpStatus = existingPermanentFollowUp?.FollowUpStatus ?? "enCours",
+            FollowUpNotes = existingPermanentFollowUp?.FollowUpNotes ?? ""
         };
 
         _db.Dossiers.Add(d);
@@ -177,10 +187,18 @@ public class DossierService
         var d = await _db.Dossiers.FindAsync(id);
         if (d == null) return null;
 
+        var sameDossiers = await _db.Dossiers
+            .Where(x => x.Code == d.Code)
+            .ToListAsync();
+
+        foreach (var sameDossier in sameDossiers)
+        {
+            sameDossier.Code = req.Code;
+            sameDossier.CompanyName = req.CompanyName;
+            sameDossier.Sector = req.Sector;
+        }
+
         d.Year = req.Year;
-        d.Code = req.Code;
-        d.CompanyName = req.CompanyName;
-        d.Sector = req.Sector;
         d.ResponsibleName = req.ResponsibleName;
         d.Phone = req.Phone;
         d.Email = req.Email;
@@ -267,7 +285,11 @@ public class DossierService
 
             // Déjà assigné au bon employé → rien à faire
             if (previousSocial != null && previousSocial.UserId == userId)
+            {
+                await SynchronizeAssignmentAcrossYears(dossier, userId, module);
+                await _db.SaveChangesAsync();
                 return true;
+            }
 
             // Supprimer TOUTES les anciennes assignations Social
             if (existingForModule.Count > 0)
@@ -300,6 +322,7 @@ public class DossierService
                     row.UpdatedAt = DateTime.UtcNow;
                 }
             }
+            await SynchronizeAssignmentAcrossYears(dossier, userId, module);
             await _db.SaveChangesAsync();
             return true;
         }
@@ -309,7 +332,11 @@ public class DossierService
 
         // déjà assigné au bon employé
         if (previousAssignment != null && previousAssignment.UserId == userId)
+        {
+            await SynchronizeAssignmentAcrossYears(dossier, userId, module);
+            await _db.SaveChangesAsync();
             return true;
+        }
 
         // supprimer ancienne assignation
         if (existingForModule.Count > 0)
@@ -342,27 +369,77 @@ public class DossierService
             }
         }
 
+        await SynchronizeAssignmentAcrossYears(dossier, userId, module);
         await _db.SaveChangesAsync();
         return true;
-    }    // ===============================
+    }
+
+    private async Task SynchronizeAssignmentAcrossYears(Dossier source, int userId, ModuleType module)
+    {
+        var siblingIds = await _db.Dossiers
+            .Where(d => d.Code == source.Code && d.Id != source.Id)
+            .Select(d => d.Id)
+            .ToListAsync();
+
+        foreach (var siblingId in siblingIds)
+        {
+            var existing = await _db.DossierAssignments
+                .Where(a => a.DossierId == siblingId && a.Module == module)
+                .ToListAsync();
+
+            if (existing.Count == 1 && existing[0].UserId == userId) continue;
+
+            var previousUserIds = existing.Select(a => a.UserId).Distinct().ToList();
+            if (existing.Count > 0) _db.DossierAssignments.RemoveRange(existing);
+
+            _db.DossierAssignments.Add(new DossierAssignment
+            {
+                DossierId = siblingId,
+                UserId = userId,
+                Module = module
+            });
+
+            if (previousUserIds.Count > 0)
+            {
+                var trackingRows = await _db.TrackingRows
+                    .Where(r => r.DossierId == siblingId &&
+                                r.Module == module &&
+                                previousUserIds.Contains(r.AssignedToUserId))
+                    .ToListAsync();
+
+                foreach (var row in trackingRows)
+                {
+                    row.AssignedToUserId = userId;
+                    row.UpdatedAt = DateTime.UtcNow;
+                }
+            }
+        }
+    }
+
+    // ===============================
     // UNASSIGN
     // ===============================
     public async Task<bool> Unassign(int dossierId, int userId, ModuleType module)
     {
-        var a = await _db.DossierAssignments
-            .FirstOrDefaultAsync(x =>
-                x.DossierId == dossierId &&
-                x.UserId == userId &&
-                x.Module == module);
-
-        if (a == null) return false;
-
         var dossier = await _db.Dossiers.FindAsync(dossierId);
 
-        if (dossier != null && await _fiscalYearService.IsClosed(dossier.Year))
+        if (dossier == null) return false;
+
+        if (await _fiscalYearService.IsClosed(dossier.Year))
             throw new Exception("Année clôturée. Modification impossible.");
 
-        _db.DossierAssignments.Remove(a);
+        var sameDossierIds = await _db.Dossiers
+            .Where(d => d.Code == dossier.Code)
+            .Select(d => d.Id)
+            .ToListAsync();
+
+        var assignments = await _db.DossierAssignments
+            .Where(a => sameDossierIds.Contains(a.DossierId) && a.Module == module)
+            .ToListAsync();
+
+        if (assignments.Count == 0) return false;
+
+        _db.DossierAssignments.RemoveRange(assignments);
         await _db.SaveChangesAsync();
         return true;
     }
@@ -399,8 +476,22 @@ public class DossierService
             City = src.City,
             PostalCode = src.PostalCode,
             Country = src.Country,
-            Notes = src.Notes
+            Notes = src.Notes,
+            LettreMissionEnvoyee = src.LettreMissionEnvoyee,
+            MandatEnvoye = src.MandatEnvoye,
+            FollowUpSupplier = src.FollowUpSupplier,
+            FollowUpStatus = src.FollowUpStatus,
+            FollowUpNotes = src.FollowUpNotes
         };
+
+        foreach (var assignment in src.Assignments)
+        {
+            clone.Assignments.Add(new DossierAssignment
+            {
+                UserId = assignment.UserId,
+                Module = assignment.Module
+            });
+        }
 
         _db.Dossiers.Add(clone);
         await _db.SaveChangesAsync();

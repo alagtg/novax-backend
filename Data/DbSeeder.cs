@@ -69,6 +69,37 @@ public class DbSeeder
             _db.Users.AddRange(users);
             _db.SaveChanges();
         }
+
+        UpsertDefaultUser("Admin NOVAX", "admin@novax.tn", UserRole.ADMIN, "Admin123!");
+        UpsertDefaultUser("Employe 1", "employe1@novax.tn", UserRole.EMPLOYE, "Emp123!");
+        UpsertDefaultUser("Employe 2", "employe2@novax.tn", UserRole.EMPLOYE, "Emp123!");
+        UpsertDefaultUser("Comptable Facture", "billing@novax.tn", UserRole.COMPTABLE_FACTURE, "Billing123!");
+
+        _db.SaveChanges();
+
+        void UpsertDefaultUser(string fullName, string email, UserRole role, string password)
+        {
+            var normalizedEmail = email.ToLowerInvariant();
+            var existing = _db.Users.FirstOrDefault(u => u.Email.ToLower() == normalizedEmail);
+
+            if (existing == null)
+            {
+                _db.Users.Add(new User
+                {
+                    FullName = fullName,
+                    Email = email,
+                    Role = role,
+                    PasswordHash = BCrypt.Net.BCrypt.HashPassword(password),
+                    IsActive = true
+                });
+                return;
+            }
+
+            existing.FullName = fullName;
+            existing.Role = role;
+            existing.PasswordHash = BCrypt.Net.BCrypt.HashPassword(password);
+            existing.IsActive = true;
+        }
     }
 
     // ========================= BILLING SETTINGS =========================

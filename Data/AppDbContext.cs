@@ -10,6 +10,7 @@ public class AppDbContext : DbContext
 
     public DbSet<User> Users => Set<User>();
     public DbSet<Dossier> Dossiers => Set<Dossier>();
+    public DbSet<DossierNote> DossierNotes => Set<DossierNote>();
     public DbSet<DossierAssignment> DossierAssignments => Set<DossierAssignment>();
     public DbSet<WorkTask> WorkTasks => Set<WorkTask>();
     public DbSet<LeaveRequest> LeaveRequests => Set<LeaveRequest>();

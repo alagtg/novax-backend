@@ -35,6 +35,7 @@ public class FollowUpService
                         DossierId = id,
                         FactureCreee = false,
                         FacturePayee = false,
+                        Fournisseur = "",
                         Notes = "",
                         UpdatedAt = DateTime.UtcNow
                     });
@@ -68,11 +69,13 @@ public class FollowUpService
                 DossierCode = f.Dossier!.Code,
                 CompanyName = f.Dossier.CompanyName,
                 Sector = f.Dossier.Sector,
+                Fournisseur = f.Dossier.FollowUpSupplier,
+                StatutDossier = f.Dossier.FollowUpStatus,
                 LettreMissionEnvoyee = f.Dossier.LettreMissionEnvoyee,
                 MandatEnvoye = f.Dossier.MandatEnvoye,
                 FactureCreee = f.FactureCreee,
                 FacturePayee = f.FacturePayee,
-                Notes = f.Notes,
+                Notes = f.Dossier.FollowUpNotes,
                 UpdatedAt = f.UpdatedAt
             })
             .ToListAsync();
@@ -88,12 +91,38 @@ public class FollowUpService
 
         if (req.FactureCreee.HasValue) row.FactureCreee = req.FactureCreee.Value;
         if (req.FacturePayee.HasValue) row.FacturePayee = req.FacturePayee.Value;
-        if (req.Notes != null) row.Notes = req.Notes;
-
         if (row.Dossier != null)
         {
-            if (req.LettreMissionEnvoyee.HasValue) row.Dossier.LettreMissionEnvoyee = req.LettreMissionEnvoyee.Value;
-            if (req.MandatEnvoye.HasValue) row.Dossier.MandatEnvoye = req.MandatEnvoye.Value;
+            var sameDossiers = await _db.Dossiers
+                .Where(d => d.Code == row.Dossier.Code)
+                .ToListAsync();
+
+            if (req.Fournisseur != null)
+            {
+                var supplier = req.Fournisseur.Trim();
+                if (supplier != "" && supplier != "Novax Expertise" && supplier != "France Conseil")
+                    throw new ArgumentException("Fournisseur invalide.");
+
+                foreach (var dossier in sameDossiers) dossier.FollowUpSupplier = supplier;
+            }
+
+            if (req.StatutDossier != null)
+            {
+                var status = req.StatutDossier.Trim();
+                if (status != "enCours" && status != "fait" && status != "sortie")
+                    throw new ArgumentException("Statut dossier invalide.");
+
+                foreach (var dossier in sameDossiers) dossier.FollowUpStatus = status;
+            }
+
+            if (req.LettreMissionEnvoyee.HasValue)
+                foreach (var dossier in sameDossiers) dossier.LettreMissionEnvoyee = req.LettreMissionEnvoyee.Value;
+
+            if (req.MandatEnvoye.HasValue)
+                foreach (var dossier in sameDossiers) dossier.MandatEnvoye = req.MandatEnvoye.Value;
+
+            if (req.Notes != null)
+                foreach (var dossier in sameDossiers) dossier.FollowUpNotes = req.Notes;
         }
 
         row.UpdatedAt = DateTime.UtcNow;
@@ -108,11 +137,13 @@ public class FollowUpService
             DossierCode = row.Dossier?.Code ?? "",
             CompanyName = row.Dossier?.CompanyName ?? "",
             Sector = row.Dossier?.Sector ?? "",
+            Fournisseur = row.Dossier?.FollowUpSupplier ?? "",
+            StatutDossier = row.Dossier?.FollowUpStatus ?? "enCours",
             LettreMissionEnvoyee = row.Dossier?.LettreMissionEnvoyee ?? false,
             MandatEnvoye = row.Dossier?.MandatEnvoye ?? false,
             FactureCreee = row.FactureCreee,
             FacturePayee = row.FacturePayee,
-            Notes = row.Notes,
+            Notes = row.Dossier?.FollowUpNotes ?? "",
             UpdatedAt = row.UpdatedAt
         };
     }

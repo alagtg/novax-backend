@@ -9,6 +9,8 @@ using YourProject.API.Models;
 using YourProject.API.Models.Billing;
 using YourProject.API.Models.Enums;
 using System.Diagnostics;
+using System.IO.Compression;
+using System.Xml.Linq;
 using YourProject.API.DTOs.Common;
 
 namespace YourProject.API.Services;
@@ -18,6 +20,42 @@ public class BillingService
     private readonly AppDbContext _db;
     private readonly FollowUpService _followUp;
     private readonly IEmailSender _emailSender;
+
+    private static void NormalizeExcelPictureNames(string workbookPath)
+    {
+        using var archive = ZipFile.Open(workbookPath, ZipArchiveMode.Update);
+        var drawingNames = archive.Entries
+            .Where(e => e.FullName.StartsWith("xl/drawings/drawing", StringComparison.OrdinalIgnoreCase)
+                     && e.FullName.EndsWith(".xml", StringComparison.OrdinalIgnoreCase))
+            .Select(e => e.FullName)
+            .ToList();
+
+        var pictureIndex = 1;
+        foreach (var entryName in drawingNames)
+        {
+            var entry = archive.GetEntry(entryName);
+            if (entry == null) continue;
+
+            XDocument document;
+            using (var stream = entry.Open())
+                document = XDocument.Load(stream, System.Xml.Linq.LoadOptions.PreserveWhitespace);
+
+            var changed = false;
+            foreach (var property in document.Descendants().Where(x => x.Name.LocalName == "cNvPr"))
+            {
+                var nameAttribute = property.Attribute("name");
+                if (nameAttribute == null || nameAttribute.Value.Length <= 31) continue;
+                nameAttribute.Value = $"Picture_{pictureIndex++}";
+                changed = true;
+            }
+
+            if (!changed) continue;
+            entry.Delete();
+            var replacement = archive.CreateEntry(entryName, CompressionLevel.Optimal);
+            using var output = replacement.Open();
+            document.Save(output, System.Xml.Linq.SaveOptions.DisableFormatting);
+        }
+    }
 
     public BillingService(
         AppDbContext db,
@@ -465,6 +503,11 @@ public class BillingService
         {
             await file.CopyToAsync(fs);
         }
+
+        // ClosedXML refuse les noms d'images de plus de 31 caractères.
+        // Certains fichiers Excel générés par des logiciels tiers en contiennent :
+        // on les raccourcit avant d'ouvrir le classeur, sans modifier les images.
+        NormalizeExcelPictureNames(originalWorkbookPath);
 
         try
         {

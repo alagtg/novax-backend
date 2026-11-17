@@ -3,12 +3,16 @@ using Microsoft.AspNetCore.Mvc;
 using YourProject.API.DTOs.Billing;
 using YourProject.API.DTOs.Common;
 using YourProject.API.Services;
+using System.Collections.Concurrent;
 
 namespace YourProject.API.Controllers;
 
 [Authorize(Roles = "ADMIN,COMPTABLE_FACTURE")]
 public class BillingController : BaseApiController
 {
+    private sealed record ImportProgress(string State, int Count, string Message, DateTime UpdatedAtUtc);
+    private static readonly ConcurrentDictionary<string, ImportProgress> ImportProgressByPeriod = new();
+    private static string ImportKey(int year, int month) => $"{year:D4}-{month:D2}";
     private readonly BillingService _billing;
 
     public BillingController(BillingService billing)
@@ -50,19 +54,32 @@ public class BillingController : BaseApiController
         [FromForm] int month,
         [FromForm] IFormFile file)
     {
+        var key = ImportKey(year, month);
+        ImportProgressByPeriod[key] = new("running", 0, "Import Excel en cours.", DateTime.UtcNow);
         try
         {
             var res = await _billing.ImportWorkbookInvoices(year, month, file);
+            ImportProgressByPeriod[key] = new("success", res.Count, "Import terminé.", DateTime.UtcNow);
             return Ok(res);
         }
         catch (Exception ex)
         {
+            ImportProgressByPeriod[key] = new("error", 0, ex.Message, DateTime.UtcNow);
             return BadRequest(new
             {
                 message = ex.Message,
                 detail = ex.GetBaseException().Message
             });
         }
+    }
+
+    [HttpGet("invoices/import-excel/status")]
+    public IActionResult GetImportExcelStatus([FromQuery] int year, [FromQuery] int month)
+    {
+        if (ImportProgressByPeriod.TryGetValue(ImportKey(year, month), out var progress))
+            return Ok(new { state = progress.State, count = progress.Count, message = progress.Message, updatedAtUtc = progress.UpdatedAtUtc });
+
+        return Ok(new { state = "idle", count = 0, message = "", updatedAtUtc = (DateTime?)null });
     }
 
     [HttpGet("invoices/{id}")]

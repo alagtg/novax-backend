@@ -27,6 +27,9 @@ public class Dossier : BaseEntity
     // Suivi administratif (tableau global)
     public bool LettreMissionEnvoyee { get; set; } = false;
     public bool MandatEnvoye { get; set; } = false;
+    public string FollowUpSupplier { get; set; } = "";
+    public string FollowUpStatus { get; set; } = "enCours";
+    public string FollowUpNotes { get; set; } = "";
 
     // Navigation
     public ICollection<DossierAssignment> Assignments { get; set; } = new List<DossierAssignment>();

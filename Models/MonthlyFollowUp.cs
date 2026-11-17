@@ -17,6 +17,8 @@ public class MonthlyFollowUp : BaseEntity
     public bool FactureCreee { get; set; } = false;
     public bool FacturePayee { get; set; } = false;
 
+    public string Fournisseur { get; set; } = "";
+
     public string Notes { get; set; } = "";
 
     public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;

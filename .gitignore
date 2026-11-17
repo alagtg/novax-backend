@@ -4,3 +4,4 @@ obj/
 out/
 *.user
 *.suo
+api-run*.log

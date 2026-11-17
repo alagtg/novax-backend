@@ -10,6 +10,8 @@ public class MonthlyFollowUpDto
     public string DossierCode { get; set; } = "";
     public string CompanyName { get; set; } = "";
     public string Sector { get; set; } = "";
+    public string Fournisseur { get; set; } = "";
+    public string StatutDossier { get; set; } = "enCours";
 
     // Dossier-level fields
     public bool LettreMissionEnvoyee { get; set; }

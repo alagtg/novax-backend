@@ -282,6 +282,18 @@ namespace YourProject.API.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("FollowUpNotes")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FollowUpStatus")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FollowUpSupplier")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<bool>("LettreMissionEnvoyee")
                         .HasColumnType("bit");
 
@@ -359,6 +371,48 @@ namespace YourProject.API.Migrations
                         .IsUnique();
 
                     b.ToTable("DossierAssignments");
+                });
+
+            modelBuilder.Entity("YourProject.API.Models.DossierNote", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("AuthorId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("AuthorName")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Details")
+                        .IsRequired()
+                        .HasMaxLength(5000)
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("DossierId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(160)
+                        .HasColumnType("nvarchar(160)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DossierId");
+
+                    b.ToTable("DossierNotes");
                 });
 
             modelBuilder.Entity("YourProject.API.Models.EmailTemplate", b =>
@@ -446,6 +500,10 @@ namespace YourProject.API.Migrations
                     b.Property<bool>("FacturePayee")
                         .HasColumnType("bit");
 
+                    b.Property<string>("Fournisseur")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("Month")
                         .HasColumnType("int");
 
@@ -524,7 +582,7 @@ namespace YourProject.API.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<bool>("CanAccessAllSocialDossiers")
-                        .HasColumnType("boolean");
+                        .HasColumnType("bit");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
@@ -647,6 +705,17 @@ namespace YourProject.API.Migrations
                     b.Navigation("Dossier");
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("YourProject.API.Models.DossierNote", b =>
+                {
+                    b.HasOne("YourProject.API.Models.Dossier", "Dossier")
+                        .WithMany()
+                        .HasForeignKey("DossierId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Dossier");
                 });
 
             modelBuilder.Entity("YourProject.API.Models.LeaveRequest", b =>

@@ -9,6 +9,8 @@ public class UpdateMonthlyFollowUpRequest
     // Month-level
     public bool? FactureCreee { get; set; }
     public bool? FacturePayee { get; set; }
+    public string? Fournisseur { get; set; }
+    public string? StatutDossier { get; set; }
 
     public string? Notes { get; set; }
 }

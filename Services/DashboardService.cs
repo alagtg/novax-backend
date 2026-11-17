@@ -1,5 +1,6 @@
 ﻿using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
+using System.Text.RegularExpressions;
 using YourProject.API.Data;
 using YourProject.API.DTOs.Dashboard;
 using YourProject.API.Models;
@@ -11,6 +12,14 @@ namespace YourProject.API.Services
     {
         private readonly AppDbContext _db;
         public DashboardService(AppDbContext db) => _db = db;
+
+        private static async Task<int> CountValidatedDossiersAsync(IQueryable<Dossier> query)
+        {
+            // Same provisional-code rule as the main Dossiers list.
+            var codes = await query.Select(d => d.Code).ToListAsync();
+            return codes.Count(code => !Regex.IsMatch((code ?? "").Trim(),
+                @"^(?:JUR|SOC|CL)(?:\b|[-_/])", RegexOptions.IgnoreCase | RegexOptions.CultureInvariant));
+        }
 
         private static Dictionary<string, object?> Parse(string? json)
         {
@@ -87,7 +96,7 @@ namespace YourProject.API.Services
             if (dossierId.HasValue)
                 dossiersQ = dossiersQ.Where(d => d.Id == dossierId.Value);
 
-            var dossierCount = await dossiersQ.CountAsync();
+            var dossierCount = await CountValidatedDossiersAsync(dossiersQ);
 
             var tasksQ = _db.WorkTasks.AsNoTracking()
                 .Where(t => t.Year == year);
@@ -283,7 +292,7 @@ namespace YourProject.API.Services
             if (dossierId.HasValue)
                 dossiersQ = dossiersQ.Where(d => d.Id == dossierId.Value);
 
-            var totalDossiers = await dossiersQ.CountAsync();
+            var totalDossiers = await CountValidatedDossiersAsync(dossiersQ);
 
             var lines = await GetLines(year, employeeId, dossierId);
             var filteredLines = FilterBiLines(lines, periodeType, periodeValue);
