@@ -19,35 +19,63 @@ public class AuthService
 
     public async Task<AuthResponse?> Login(LoginRequest req)
     {
-        var email = (req.Email ?? "").Trim().ToLowerInvariant();
-        var user = await _db.Users.FirstOrDefaultAsync(u => u.Email.ToLower() == email);
+        var email = (req.Email ?? "")
+            .Trim()
+            .ToLowerInvariant();
 
-        if (user == null || !user.IsActive) return null;
+        var user = await _db.Users
+            .FirstOrDefaultAsync(
+                u => u.Email.ToLower() == email
+            );
 
-        var ok = BCrypt.Net.BCrypt.Verify(req.Password, user.PasswordHash);
-        if (!ok) return null;
+        if (user == null || !user.IsActive)
+            return null;
+
+        var ok = BCrypt.Net.BCrypt.Verify(
+            req.Password,
+            user.PasswordHash
+        );
+
+        if (!ok)
+            return null;
 
         var token = _jwt.CreateToken(user);
+
         return new AuthResponse
         {
             Token = token,
             UserId = user.Id,
             FullName = user.FullName,
             Email = user.Email,
-            Role = user.Role
+            Role = user.Role,
+
+            CanAccessAllSocialDossiers =
+                user.CanAccessAllSocialDossiers
         };
     }
 
-    public async Task<bool> ChangePassword(int userId, string oldPwd, string newPwd)
+    public async Task<bool> ChangePassword(
+        int userId,
+        string oldPwd,
+        string newPwd)
     {
         var user = await _db.Users.FindAsync(userId);
-        if (user == null) return false;
 
-        if (!BCrypt.Net.BCrypt.Verify(oldPwd, user.PasswordHash))
+        if (user == null || !user.IsActive)
             return false;
 
-        user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(newPwd);
+        if (!BCrypt.Net.BCrypt.Verify(
+            oldPwd,
+            user.PasswordHash))
+        {
+            return false;
+        }
+
+        user.PasswordHash =
+            BCrypt.Net.BCrypt.HashPassword(newPwd);
+
         await _db.SaveChangesAsync();
+
         return true;
     }
 }

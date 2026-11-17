@@ -201,7 +201,6 @@ public class TrackingService
     public async Task<List<TrackingRowDto>> Get(int year, ModuleType module, string board, int? userId, string? q, bool isAdmin)
     {
         if (isAdmin) userId = null;
-        if (!isAdmin && !userId.HasValue) return new();
 
         if (AutoSeed(module, board))
             await EnsureRowsForAssignments(year, module, board, userId, isAdmin);
@@ -496,38 +495,43 @@ public class TrackingService
         };
     }
     public async Task<YourProject.API.DTOs.Common.PagedResult<DTOs.Tracking.DossierLookDto>> LookPaged(
-    int year,
-    ModuleType module,
-    int? userId,
-    bool isAdmin,
-    string? q,
-    int page,
-    int pageSize)
+        int year, ModuleType module, int? userId, bool isAdmin, string? q, int page, int pageSize)
     {
+        // The controller must only pass null for an authorized global-social employee or admin.
+        if (module == ModuleType.Social && !userId.HasValue)
+        {
+            var dossiers = _db.Dossiers.AsNoTracking().Where(d => d.Year == year);
+            if (!string.IsNullOrWhiteSpace(q))
+            {
+                var qq = q.Trim().ToLowerInvariant();
+                dossiers = dossiers.Where(d => d.Code.ToLower().Contains(qq) ||
+                    d.CompanyName.ToLower().Contains(qq) || d.Sector.ToLower().Contains(qq));
+            }
+            var dtoQuery = dossiers.OrderBy(d => d.CompanyName)
+                .Select(d => new DTOs.Tracking.DossierLookDto
+                {
+                    DossierId = d.Id,
+                    Code = d.Code,
+                    CompanyName = d.CompanyName,
+                    Sector = d.Sector,
+                    AssignedToUserId = _db.DossierAssignments
+                        .Where(a => a.DossierId == d.Id && a.Module == ModuleType.Social)
+                        .OrderBy(a => a.UserId).Select(a => a.UserId).FirstOrDefault(),
+                    AssignedToName = _db.DossierAssignments
+                        .Where(a => a.DossierId == d.Id && a.Module == ModuleType.Social)
+                        .OrderBy(a => a.UserId).Select(a => a.User!.FullName).FirstOrDefault() ?? ""
+                });
+            return await YourProject.API.Helpers.QueryableExtensions.ToPagedAsync(dtoQuery, page, pageSize);
+        }
         var query = AssignmentsQuery(year, module);
-
-        if (isAdmin)
-        {
-            if (userId.HasValue)
-                query = query.Where(a => a.UserId == userId.Value);
-        }
-        else
-        {
-            if (userId.HasValue)
-                query = query.Where(a => a.UserId == userId.Value);
-        }
-
+        if (userId.HasValue) query = query.Where(a => a.UserId == userId.Value);
         if (!string.IsNullOrWhiteSpace(q))
         {
             var qq = q.Trim().ToLowerInvariant();
-            query = query.Where(a =>
-                a.Dossier!.Code.ToLower().Contains(qq) ||
-                a.Dossier!.CompanyName.ToLower().Contains(qq) ||
-                a.Dossier!.Sector.ToLower().Contains(qq));
+            query = query.Where(a => a.Dossier!.Code.ToLower().Contains(qq) ||
+                a.Dossier!.CompanyName.ToLower().Contains(qq) || a.Dossier!.Sector.ToLower().Contains(qq));
         }
-
-        var dtoQuery = query
-            .OrderBy(a => a.Dossier!.CompanyName)
+        var result = query.OrderBy(a => a.Dossier!.CompanyName)
             .Select(a => new DTOs.Tracking.DossierLookDto
             {
                 DossierId = a.DossierId,
@@ -536,10 +540,8 @@ public class TrackingService
                 Sector = a.Dossier!.Sector,
                 AssignedToUserId = a.UserId,
                 AssignedToName = a.User!.FullName
-            })
-            .Distinct();
-
-        return await YourProject.API.Helpers.QueryableExtensions.ToPagedAsync(dtoQuery, page, pageSize);
+            }).Distinct();
+        return await YourProject.API.Helpers.QueryableExtensions.ToPagedAsync(result, page, pageSize);
     }
 
     private async Task EnsureRowsForAssignments(int year, ModuleType module, string board, int? userId, bool isAdmin)
@@ -598,33 +600,59 @@ public class TrackingService
             await _db.SaveChangesAsync();
         }
     }
+    private async Task<bool> CanAccessSocialGlobally(int userId, ModuleType module)
+        => module == ModuleType.Social && await UserCanAccessAllSocialDossiers(userId);
+
+    // A global-social employee may work on an existing assigned owner, but cannot
+    // impersonate arbitrary user IDs. For an unassigned dossier, use the actor.
+    private async Task<int?> ResolveSocialOwner(int dossierId, int currentUserId, int? requestedOwner)
+    {
+        var owners = _db.DossierAssignments.AsNoTracking()
+            .Where(a => a.DossierId == dossierId && a.Module == ModuleType.Social);
+
+        if (requestedOwner.HasValue && requestedOwner.Value > 0)
+        {
+            var valid = await owners.AnyAsync(a => a.UserId == requestedOwner.Value);
+            return valid ? requestedOwner.Value : null;
+        }
+
+        var existingOwner = await owners.OrderBy(a => a.UserId)
+            .Select(a => (int?)a.UserId).FirstOrDefaultAsync();
+        return existingOwner ?? currentUserId;
+    }
+
     public async Task<TrackingRowDto?> Ensure(int year, ModuleType module, string board, int dossierId, int currentUserId, bool isAdmin, int? assignedToUserId)
     {
-        var uid = isAdmin ? (assignedToUserId ?? currentUserId) : currentUserId;
-
-        if (!isAdmin)
+        if (!await _db.Dossiers.AnyAsync(d => d.Id == dossierId && d.Year == year)) return null;
+        var globalSocial = !isAdmin && await CanAccessSocialGlobally(currentUserId, module);
+        int uid;
+        if (globalSocial)
         {
-            var ok = await _db.DossierAssignments.AnyAsync(a => a.DossierId == dossierId && a.UserId == uid && a.Module == module);
-            if (!ok) return null;
+            var resolved = await ResolveSocialOwner(dossierId, currentUserId, assignedToUserId);
+            if (!resolved.HasValue) return null;
+            uid = resolved.Value;
         }
-        else
+        else uid = isAdmin ? (assignedToUserId ?? currentUserId) : currentUserId;
+
+        if (!isAdmin && !globalSocial)
         {
-            var existsAssign = await _db.DossierAssignments.AnyAsync(a => a.DossierId == dossierId && a.UserId == uid && a.Module == module);
-            if (!existsAssign)
+            if (!await _db.DossierAssignments.AnyAsync(a => a.DossierId == dossierId && a.UserId == uid && a.Module == module)) return null;
+        }
+        else if (isAdmin)
+        {
+            if (!await _db.DossierAssignments.AnyAsync(a => a.DossierId == dossierId && a.UserId == uid && a.Module == module))
             {
-                _db.DossierAssignments.Add(new Models.DossierAssignment { DossierId = dossierId, UserId = uid, Module = module });
+                _db.DossierAssignments.Add(new DossierAssignment { DossierId = dossierId, UserId = uid, Module = module });
                 await _db.SaveChangesAsync();
             }
         }
 
-        var row = await _db.TrackingRows
-            .Include(r => r.Dossier)
-            .Include(r => r.AssignedToUser)
+        var row = await _db.TrackingRows.Include(r => r.Dossier).Include(r => r.AssignedToUser)
             .FirstOrDefaultAsync(r => r.Year == year && r.Module == module && r.Board == board && r.DossierId == dossierId && r.AssignedToUserId == uid);
-
         if (row == null)
         {
-            var actor = await _db.Users.AsNoTracking().Where(u => u.Id == uid).Select(u => u.FullName).FirstOrDefaultAsync() ?? "Employé";
+            var actorName = await _db.Users.AsNoTracking().Where(u => u.Id == currentUserId)
+                .Select(u => u.FullName).FirstOrDefaultAsync() ?? "Employé";
             row = new TrackingRow
             {
                 Year = year,
@@ -632,20 +660,15 @@ public class TrackingService
                 Board = board,
                 DossierId = dossierId,
                 AssignedToUserId = uid,
-                DataJson = Stringify(BuildInitialAudit(uid, actor)),
+                DataJson = Stringify(BuildInitialAudit(currentUserId, actorName)),
                 UpdatedAt = DateTime.UtcNow
             };
             _db.TrackingRows.Add(row);
             await _db.SaveChangesAsync();
-
-            row = await _db.TrackingRows
-                .Include(r => r.Dossier)
-                .Include(r => r.AssignedToUser)
+            row = await _db.TrackingRows.Include(r => r.Dossier).Include(r => r.AssignedToUser)
                 .FirstOrDefaultAsync(r => r.Id == row.Id);
         }
-
         if (row == null) return null;
-
         return new TrackingRowDto
         {
             Id = row.Id,
@@ -769,60 +792,39 @@ public class TrackingService
         return true;
     }
     public async Task<TrackingRowDto?> Create(
-        int year,
-        ModuleType module,
-        string board,
-        int dossierId,
-        int currentUserId,
-        bool isAdmin,
-        int? assignedToUserId,
+        int year, ModuleType module, string board, int dossierId,
+        int currentUserId, bool isAdmin, int? assignedToUserId,
         Dictionary<string, object?>? data)
     {
-        var uid = isAdmin ? (assignedToUserId ?? currentUserId) : currentUserId;
-
-        if (!isAdmin)
+        if (!await _db.Dossiers.AnyAsync(d => d.Id == dossierId && d.Year == year)) return null;
+        var globalSocial = !isAdmin && await CanAccessSocialGlobally(currentUserId, module);
+        int uid;
+        if (globalSocial)
         {
-            var ok = await _db.DossierAssignments.AnyAsync(a =>
-                a.DossierId == dossierId &&
-                a.UserId == uid &&
-                a.Module == module);
-
-            if (!ok) return null;
+            var resolved = await ResolveSocialOwner(dossierId, currentUserId, assignedToUserId);
+            if (!resolved.HasValue) return null;
+            uid = resolved.Value;
         }
-        else
+        else uid = isAdmin ? (assignedToUserId ?? currentUserId) : currentUserId;
+
+        if (!isAdmin && !globalSocial)
         {
-            var existsAssign = await _db.DossierAssignments.AnyAsync(a =>
-                a.DossierId == dossierId &&
-                a.UserId == uid &&
-                a.Module == module);
-
-            if (!existsAssign)
+            if (!await _db.DossierAssignments.AnyAsync(a => a.DossierId == dossierId && a.UserId == uid && a.Module == module)) return null;
+        }
+        else if (isAdmin)
+        {
+            if (!await _db.DossierAssignments.AnyAsync(a => a.DossierId == dossierId && a.UserId == uid && a.Module == module))
             {
-                _db.DossierAssignments.Add(new DossierAssignment
-                {
-                    DossierId = dossierId,
-                    UserId = uid,
-                    Module = module
-                });
-
+                _db.DossierAssignments.Add(new DossierAssignment { DossierId = dossierId, UserId = uid, Module = module });
                 await _db.SaveChangesAsync();
             }
         }
 
-        var actor = await _db.Users.AsNoTracking()
-            .Where(u => u.Id == uid)
-            .Select(u => u.FullName)
-            .FirstOrDefaultAsync() ?? "Employé";
-
-        var payload = data ?? new Dictionary<string, object?>();
-
-        if (!payload.ContainsKey("__audit"))
-        {
-            var audit = BuildInitialAudit(uid, actor);
-            foreach (var kv in audit)
-                payload[kv.Key] = kv.Value;
-        }
-
+        var actor = await _db.Users.AsNoTracking().Where(u => u.Id == currentUserId)
+            .Select(u => u.FullName).FirstOrDefaultAsync() ?? "Employé";
+        var payload = data != null ? new Dictionary<string, object?>(data) : new();
+        // Never accept a forged creation audit from the browser.
+        payload["__audit"] = BuildInitialAudit(currentUserId, actor)["__audit"];
         var row = new TrackingRow
         {
             Year = year,
@@ -833,17 +835,11 @@ public class TrackingService
             DataJson = Stringify(payload),
             UpdatedAt = DateTime.UtcNow
         };
-
         _db.TrackingRows.Add(row);
         await _db.SaveChangesAsync();
-
-        row = await _db.TrackingRows
-            .Include(r => r.Dossier)
-            .Include(r => r.AssignedToUser)
+        row = await _db.TrackingRows.Include(r => r.Dossier).Include(r => r.AssignedToUser)
             .FirstOrDefaultAsync(r => r.Id == row.Id);
-
         if (row == null) return null;
-
         return new TrackingRowDto
         {
             Id = row.Id,
